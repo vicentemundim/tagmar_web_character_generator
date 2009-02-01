@@ -1,5 +1,5 @@
 .main_navigation {
-  margin: 0px 5px 0px auto;
+  margin: 2px 5px 0px auto;
   float:right;
 }
 
@@ -13,23 +13,24 @@
   display:inline;
   padding: 0;
   margin: 0;
+  color: #E2F0D6;
 }
 
 .main_navigation li span.disabled {
-  color: #888888;
+  color: #fdfdfd;
 }
 
 .main_navigation a, .main_navigation a:visited, .main_navigation a:hover {
   border: none;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   font-weight: normal;
-  color: #000000;
+  color: #E2F0D6;
 }
 
 .main_navigation a:hover {
-   font-weight: normal;
-   color: #CB4415;
+   font-weight: bold;
+   color: #F6FFE0;
 }
 
 .main_navigation a.active {

@@ -12,4 +12,6 @@ class UsersController < ApplicationController
 
     failure.flash "Could not create your account."
   end
+
+  update.wants.html { redirect_to('/') }
 end
