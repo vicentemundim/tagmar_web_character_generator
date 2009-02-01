@@ -1,5 +1,15 @@
 module UsersHelper
-  
+
+  # Runs the given block if a user is logged in.
+  def if_logged_in?(&block)
+    yield if logged_in?
+  end
+
+  # Runs the given block unless a user is logged in.
+  def unless_logged_in?(&block)
+    yield unless logged_in?
+  end
+
   #
   # Use this to wrap view elements that the user can't access.
   # !! Note: this is an *interface*, not *security* feature !!
