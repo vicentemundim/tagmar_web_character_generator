@@ -1,0 +1,27 @@
+<%- content_for :additional_stylesheets do -%>
+    <%= stylesheet_link_tag 'navigation' -%>
+<%- end -%>
+
+<%-
+render_navigation :main do
+  add_item do |i|
+    i.named 'signup'
+    i.links_to signup_path
+  end unless logged_in?
+
+  add_item do |i|
+    i.named 'login'
+    i.links_to login_path
+  end unless logged_in?
+
+  add_item do |i|
+    i.named 'my profile'
+    i.links_to edit_user_path(current_user)
+  end if logged_in?
+
+  add_item do |i|
+    i.named 'logout'
+    i.links_to logout_path
+  end if logged_in?
+end
+-%>

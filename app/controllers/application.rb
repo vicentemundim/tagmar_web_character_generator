@@ -15,5 +15,5 @@ class ApplicationController < ActionController::Base
 
   include AuthenticatedSystem
 
-  layout "application"
+  layout "main"
 end
