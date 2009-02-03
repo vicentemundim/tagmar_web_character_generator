@@ -1,6 +1,6 @@
 .main_navigation {
   margin: 2px 5px 0px auto;
-  float:right;
+  float: right;
 }
 
 .main_navigation ul {
@@ -17,7 +17,7 @@
 }
 
 .main_navigation li span.disabled {
-  color: #fdfdfd;
+  color: #FDFDFD;
 }
 
 .main_navigation a, .main_navigation a:visited, .main_navigation a:hover {
@@ -25,14 +25,15 @@
   padding: 0;
   margin: 0;
   font-weight: normal;
-  color: #E2F0D6;
+  color: #BDD684;
 }
 
 .main_navigation a:hover {
-   font-weight: bold;
+   font-weight: normal;
    color: #F6FFE0;
 }
 
 .main_navigation a.active {
-  font-weight: bold;
+  font-weight: normal;
+  color: #DBE5C5;
 }
