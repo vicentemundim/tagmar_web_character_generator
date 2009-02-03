@@ -8,6 +8,8 @@ render_tabnav :menu do
     t.named 'Página Inicial'
     t.titled 'Página Inicial'
     t.links_to :controller => 'home'
+    t.highlights_on :controller => 'sessions'
+    t.highlights_on :controller => 'users'
   end
 end 
 -%>

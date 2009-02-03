@@ -4,7 +4,7 @@
   margin: 18px 0px 0px 0px;
   padding: 0px;
   z-index: 1;
-  padding-left: 10px;
+  padding-left: 0px;
   clear: left;
   float: left;
   width: 100%;
@@ -12,7 +12,7 @@
 
 .menu_tabnav ul {
   margin: 0px;
-  padding: 0px;
+  padding: 0px 0px 0px 10px;
 }
 
 .menu_tabnav li {

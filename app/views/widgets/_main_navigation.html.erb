@@ -5,22 +5,22 @@
 <%-
 render_navigation :main do
   add_item do |i|
-    i.named 'signup'
+    i.named 'registre-se'
     i.links_to signup_path
   end unless logged_in?
 
   add_item do |i|
-    i.named 'login'
+    i.named 'entrar'
     i.links_to login_path
   end unless logged_in?
 
   add_item do |i|
-    i.named 'my profile'
+    i.named 'meu perfil'
     i.links_to edit_user_path(current_user)
   end if logged_in?
 
   add_item do |i|
-    i.named 'logout'
+    i.named 'sair'
     i.links_to logout_path
   end if logged_in?
 end
