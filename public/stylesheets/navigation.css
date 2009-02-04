@@ -1,6 +1,9 @@
 .main_navigation {
-  margin: 2px 5px 0px auto;
+  margin: 5px 8px 0px auto;
   float: right;
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-style: italic;
+	font-size: 0.9em;
 }
 
 .main_navigation ul {
@@ -31,6 +34,7 @@
 .main_navigation a:hover {
    font-weight: normal;
    color: #F6FFE0;
+	 text-decoration: none;
 }
 
 .main_navigation a.active {

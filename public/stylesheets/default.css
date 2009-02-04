@@ -9,7 +9,7 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #F6FFE0;
+	background: #F6FFE0 url(/images/body_background.png) repeat-x top left;
   font-family: Verdana, Helvetica, Arial;
   font-size: 1.0em;
 }

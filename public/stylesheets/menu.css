@@ -1,7 +1,6 @@
 .menu_tabnav {
-  color: #10222B;
-  border-bottom: 4px solid #95AB63;
-  margin: 18px 0px 0px 0px;
+  color: #000;
+  margin: 36px 0px 0px;
   padding: 0px;
   z-index: 1;
   padding-left: 0px;
@@ -19,43 +18,64 @@
   display: inline;
   overflow: hidden;
   list-style-type: none;
+	font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	margin: 0px 1px 0px 0px;
 }
 
 .menu_tabnav li span.disabled {
-  color: #E2F0D6;
+  color: #000;
   background-color: #FDFDFD;
-  border: 2px solid #95AB63;
+
+-moz-border-radius-bottomleft:0px;
+-moz-border-radius-bottomright:0px;
+-moz-border-radius-topleft:12px;
+-moz-border-radius-topright:12px;
+
+  border: 3px solid #95AB63;
   border-bottom: none;
-  padding: 2px 5px 0px 5px;
-  margin: 0;
+  padding: 2px 8px 2px 8px;
+  margin: 0px;
   text-decoration: none;
 }
 
-.menu_tabnav a, .menu_tabnav a:visited, menu_tabnav a.active {
-  color: #10222B;
-  background-color: #E2F0D6;
+.menu_tabnav a, .menu_tabnav a:visited, .menu_tabnav a.active {
+  color: #548000;
   font-weight: normal;
-  border: 2px solid #95AB63;
-  border-bottom: 4px solid #95AB63;
-  padding: 2px 10px 3px 10px;
+background-color: #eaf0db;
+
+-moz-border-radius-bottomleft:0px;
+-moz-border-radius-bottomright:0px;
+-moz-border-radius-topleft:12px;
+-moz-border-radius-topright:12px;
+
+  border: 3px solid #548000;
+  padding: 2px 8px 2px 8px;
   line-height: 1.6em;
   margin: 0;
   text-decoration: none;
 }
 
+.menu_tabnav a{
+	background: #F6FFE0 url(/images/menu_item_background.png) repeat-x top left;
+}
+
 .menu_tabnav a.active {
   font-weight: bold;
   background-color: #F6FFE0;
-  border-bottom: 4px solid #F6FFE0;
+	border-bottom: 3px solid #F6FFE0;
+	background-image: none;
+	color: #000000;
 }
 
 .menu_tabnav a:hover {
-  color: #10222B;
+  color: #000;
   background-color: #F6FFE0;
+	background-image: none;
 }
 
 .menu_tabnav a.active:hover {
 	color: #10222B;
-  background-color: #E2F0D6;
-  border-bottom: 4px solid #E2F0D6;
+	background: #F6FFE0 url(/images/menu_item_background.png) repeat-x top left;
+  border-bottom: 3px solid #F6FFE0;
 }
