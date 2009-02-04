@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   resource_controller
 
+  before_filter :prevent_user_update_other_users_data, :only => [:edit, :update]
+
   create do
     before { logout_keeping_session! }
     after { self.current_user = @user }
@@ -14,4 +16,11 @@ class UsersController < ApplicationController
   end
 
   update.wants.html { redirect_to('/') }
+
+  def prevent_user_update_other_users_data
+    unless current_user.id.to_s == params[:id]
+      flash[:error] = "Cannot update other users data."
+      redirect_to('/')
+    end
+  end
 end
