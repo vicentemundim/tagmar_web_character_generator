@@ -11,5 +11,11 @@ render_tabnav :menu do
     t.highlights_on :controller => 'sessions'
     t.highlights_on :controller => 'users'
   end
+
+  add_tab do |t|
+    t.named 'Personagens'
+    t.titled 'Gerencie seus personagens'
+    t.links_to user_characters_path(current_user)
+  end if logged_in?
 end 
 -%>
