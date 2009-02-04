@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  intelect_modifier: 1
+  aura_modifier: 1
+  charisma_modifier: 1
+  strengh_modifier: 1
+  physical_modifier: 1
+  agility_modifier: 1
+
+two:
+  name: MyString
+  description: MyText
+  intelect_modifier: 1
+  aura_modifier: 1
+  charisma_modifier: 1
+  strengh_modifier: 1
+  physical_modifier: 1
+  agility_modifier: 1
