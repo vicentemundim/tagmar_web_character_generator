@@ -16,6 +16,7 @@ render_tabnav :menu do
     t.named 'Personagens'
     t.titled 'Gerencie seus personagens'
     t.links_to user_characters_path(current_user)
+    t.highlights_on :controller => 'characters'
   end if logged_in?
 end 
 -%>
