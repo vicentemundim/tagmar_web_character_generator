@@ -4,6 +4,7 @@ html {
   background-color: #F6FFE0;
   font-family: Verdana, Helvetica, Arial;
   font-size: 1.0em;
+  height: 100%;
 }
 
 body {
@@ -12,6 +13,7 @@ body {
 	background: #F6FFE0 url(/images/body_background.png) repeat-x top left;
   font-family: Verdana, Helvetica, Arial;
   font-size: 1.0em;
+  height: 100%;
 }
 
 a {

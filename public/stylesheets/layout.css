@@ -5,7 +5,8 @@
 }
 
 #sidebar {
-	width: 23%;
+  display: none;
+	width: 230px;
 	height: auto;
 	float: right;
 	background-color:#ebf6ce;
@@ -19,4 +20,19 @@
 	border-bottom: 6px solid #d9dba6;
 	border-left: 6px solid #d9dba6;
 	padding: 12px;
+}
+
+#footer {
+  background: transparent url(/images/footer_background.png) repeat-x top left;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#footer p {
+  padding: 0px;
+  margin: 20px 0px;
+  height: 17px;
+  text-align: center;
+  font-size: 0.6em;
 }
