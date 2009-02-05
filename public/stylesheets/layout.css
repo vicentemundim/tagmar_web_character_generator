@@ -30,9 +30,9 @@
 }
 
 #footer p {
-  padding: 0px;
-  margin: 20px 0px;
-  height: 17px;
+  padding: 15px 0px 0px 0px;
+  margin: 20px 0px 0px;
+  height: 25px;
   text-align: center;
   font-size: 0.6em;
 }
