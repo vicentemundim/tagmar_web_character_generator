@@ -1,6 +1,12 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe CharactersController do
+  fixtures :users
+  
+  before(:each) do
+    login_as(:vicente)
+  end
+
   describe "handling GET /users/1/characters" do
 
     before(:each) do
