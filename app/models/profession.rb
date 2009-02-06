@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090206212949
+# Schema version: 20090206215518
 #
 # Table name: professions
 #
@@ -11,6 +11,7 @@
 #  can_use_magic           :boolean(1)
 #  created_at              :datetime
 #  updated_at              :datetime
+#  identifier              :string(255)
 #
 
 class Profession < ActiveRecord::Base

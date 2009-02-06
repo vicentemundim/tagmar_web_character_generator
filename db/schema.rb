@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090206212949) do
+ActiveRecord::Schema.define(:version => 20090206215518) do
 
   create_table "characters", :force => true do |t|
     t.string   "name"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20090206212949) do
     t.boolean  "can_use_magic"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "identifier"
   end
 
   create_table "races", :force => true do |t|

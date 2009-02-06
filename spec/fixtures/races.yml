@@ -20,6 +20,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 human:
+  id: 1
   identifier: human
   name: Humano
   description: Um humano é um ser normal
@@ -31,6 +32,7 @@ human:
   agility_modifier: 0
 
 halfling:
+  id: 2
   identifier: halfling
   name: Pequenino
   description: Um cara muito pequeno
@@ -42,6 +44,7 @@ halfling:
   agility_modifier: 2
 
 dwarf:
+  id: 3
   identifier: dwarf
   name: Anão
   description: Um cara pequeno e gordo
@@ -53,6 +56,7 @@ dwarf:
   agility_modifier: 0
 
 wood_elf:
+  id: 4
   identifier: wood_elf
   name: Elfo Florestal
   description: Um elfo das florestas
@@ -64,6 +68,7 @@ wood_elf:
   agility_modifier: 1
 
 golden_elf:
+  id: 5
   identifier: golden_elf
   name: Elfo Dourado
   description: Um elfo dourado
@@ -75,6 +80,7 @@ golden_elf:
   agility_modifier: 1
 
 half_elf:
+  id: 6
   identifier: half_elf
   name: Meio Elfo
   description: Meio humano, meio elfo

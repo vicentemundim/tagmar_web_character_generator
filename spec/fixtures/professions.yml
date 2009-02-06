@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090206212949
+# Schema version: 20090206215518
 #
 # Table name: professions
 #
@@ -11,20 +11,61 @@
 #  can_use_magic           :boolean(1)
 #  created_at              :datetime
 #  updated_at              :datetime
+#  identifier              :string(255)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  description: MyText
-  skill_points_per_level: 1
-  combat_points_per_level: 1
+warrior:
+  id: 1
+  identifier: warrior
+  name: Guerreiro
+  description: Um guerreiro
+  skill_points_per_level: 22
+  combat_points_per_level: 7
   can_use_magic: false
 
-two:
-  name: MyString
-  description: MyText
-  skill_points_per_level: 1
-  combat_points_per_level: 1
+thief:
+  id: 2
+  identifier: thief
+  name: Ladrão
+  description: Um ladrão
+  skill_points_per_level: 24
+  combat_points_per_level: 3
   can_use_magic: false
+
+priest:
+  id: 3
+  identifier: priest
+  name: Sacerdote
+  description: Um sacerdote
+  skill_points_per_level: 22
+  combat_points_per_level: 3
+  can_use_magic: true
+
+mage:
+  id: 4
+  identifier: mage
+  name: Mago
+  description: Um mago
+  skill_points_per_level: 22
+  combat_points_per_level: 1
+  can_use_magic: true
+
+crawler:
+  id: 5
+  identifier: crawler
+  name: Rastreador
+  description: Um rastreador
+  skill_points_per_level: 22
+  combat_points_per_level: 5
+  can_use_magic: true
+
+bard:
+  id: 6
+  identifier: bard
+  name: Bardo
+  description: Um bardo
+  skill_points_per_level: 22
+  combat_points_per_level: 2
+  can_use_magic: true
