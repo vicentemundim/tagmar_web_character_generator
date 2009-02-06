@@ -1,0 +1,130 @@
+# == Schema Information
+# Schema version: 20090206224801
+#
+# Table name: belongings
+#
+#  id                :integer(4)      not null, primary key
+#  type              :string(255)
+#  identifier        :string(255)
+#  name              :string(255)
+#  description       :text
+#  minimum_strengh   :integer(4)
+#  minimum_height    :integer(4)
+#  first_column      :integer(4)
+#  nineth_column     :integer(4)
+#  sixteenth_column  :integer(4)
+#  base_damage       :integer(4)
+#  range             :integer(4)
+#  absorption        :integer(4)
+#  bronze_coins_cost :integer(4)
+#  defense_increase  :integer(4)
+#  special_effect    :string(255)
+#  created_at        :datetime
+#  updated_at        :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+knife:
+  type: Weapon
+  identifier: knife
+  name: Faca
+  description: 
+  minimum_strengh: 2
+  minimum_height: 97
+  first_column: 1
+  nineth_column: -3
+  sixteenth_column: -6
+  base_damage: 8
+  bronze_coins_cost: 20
+
+dagger:
+  type: Weapon
+  identifier: dagger
+  name: Punhal
+  description:
+  minimum_strengh: 3
+  minimum_height: 97
+  first_column: 1
+  nineth_column: -2
+  sixteenth_column: -5
+  base_damage: 12
+  range: 20
+  bronze_coins_cost: 50
+
+light_leather:
+  type: Armor
+  identifier: light_leather
+  name: Couro Level
+  description:
+  absorption: 3
+  bronze_coins_cost: 20
+
+open_elm:
+  type: Elm
+  identifier: open_elm
+  name: Elmo Aberto
+  description:
+  absorption: 1
+  bronze_coins_cost: 20
+
+closed_elm:
+  type: Elm
+  identifier: closed_elm
+  name: Elmo Fechado
+  description:
+  absorption: 2
+  bronze_coins_cost: 50
+
+small_shield:
+  type: Shield
+  identifier: small_shield
+  name: Escudo Pequeno
+  description:
+  absorption: 3
+  bronze_coins_cost: 20
+  defense_increase: 1
+
+big_shield:
+  type: Shield
+  identifier: big_shield
+  name: Escudo Grande
+  description:
+  absorption: 5
+  bronze_coins_cost: 150
+  defense_increase: 1
+
+odre:
+  type: OtherBelonging
+  identifier: odre
+  name: Odre
+  description:
+  bronze_coins_cost: 2
+
+small_bag:
+  type: OtherBelonging
+  identifier: small_bag
+  name: Saco pequeno
+  description:
+  bronze_coins_cost: 2
+
+boots:
+  type: OtherBelonging
+  identifier: boots
+  name: Par de botas
+  description:
+  bronze_coins_cost: 6
+
+belt:
+  type: OtherBelonging
+  identifier: belt
+  name: Cinto
+  description:
+  bronze_coins_cost: 2
+
+common_wearing:
+  type: OtherBelonging
+  identifier: common_wearing
+  name: Roupa comum
+  description:
+  bronze_coins_cost: 5

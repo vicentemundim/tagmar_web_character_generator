@@ -9,7 +9,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090206220550) do
+ActiveRecord::Schema.define(:version => 20090206224801) do
+
+  create_table "belongings", :force => true do |t|
+    t.string   "type"
+    t.string   "identifier"
+    t.string   "name"
+    t.text     "description"
+    t.integer  "minimum_strengh"
+    t.integer  "minimum_height"
+    t.integer  "first_column"
+    t.integer  "nineth_column"
+    t.integer  "sixteenth_column"
+    t.integer  "base_damage"
+    t.integer  "range"
+    t.integer  "absorption"
+    t.integer  "bronze_coins_cost"
+    t.integer  "defense_increase"
+    t.string   "special_effect"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "characters", :force => true do |t|
     t.string   "name"
