@@ -1,6 +1,12 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe RacesController do
+  fixtures :users
+
+  before(:each) do
+    login_as(:vicente)
+  end
+  
   describe "handling GET /races" do
 
     before(:each) do
@@ -159,20 +165,6 @@ describe RacesController do
       end
       
     end
-    
-    describe "with failed save" do
-
-      def do_post
-        @race.should_receive(:save).and_return(false)
-        post :create, :race => {}
-      end
-  
-      it "should re-render 'new'" do
-        do_post
-        response.should render_template('new')
-      end
-      
-    end
   end
 
   describe "handling PUT /races/1" do
@@ -207,20 +199,6 @@ describe RacesController do
       it "should redirect to the race" do
         do_put
         response.should redirect_to(race_url("1"))
-      end
-
-    end
-    
-    describe "with failed update" do
-
-      def do_put
-        @race.should_receive(:update_attributes).and_return(false)
-        put :update, :id => "1"
-      end
-
-      it "should re-render 'edit'" do
-        do_put
-        response.should render_template('edit')
       end
 
     end
