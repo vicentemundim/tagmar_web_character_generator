@@ -20,12 +20,12 @@ class Rules::HeightWeight
       DWARF_HEIGHT_WEIGHT_MAPPING[dice_value][0]
     end
 
-    def height_for_florestal_elf(dice_value)
-      ELFS_HEIGHT_WEIGHT_MAPPING[dice_value][0]
+    def height_for_wood_elf(dice_value)
+      ELF_HEIGHT_WEIGHT_MAPPING[dice_value][0]
     end
 
     def height_for_golden_elf(dice_value)
-      ELFS_HEIGHT_WEIGHT_MAPPING[dice_value][0]
+      ELF_HEIGHT_WEIGHT_MAPPING[dice_value][0]
     end
 
     def height_for_half_elf(dice_value)
@@ -44,12 +44,12 @@ class Rules::HeightWeight
       DWARF_HEIGHT_WEIGHT_MAPPING[dice_value][1]
     end
 
-    def weight_for_florestal_elf(dice_value)
-      ELFS_HEIGHT_WEIGHT_MAPPING[dice_value][1]
+    def weight_for_wood_elf(dice_value)
+      ELF_HEIGHT_WEIGHT_MAPPING[dice_value][1]
     end
 
     def weight_for_golden_elf(dice_value)
-      ELFS_HEIGHT_WEIGHT_MAPPING[dice_value][1]
+      ELF_HEIGHT_WEIGHT_MAPPING[dice_value][1]
     end
 
     def weight_for_half_elf(dice_value)
@@ -58,14 +58,14 @@ class Rules::HeightWeight
   end
 
   HUMAN_HEIGHT_WEIGHT_MAPPING = {
-    2 => [150, 58],
-    3 => [152, 60],
-    4 => [155, 61],
-    5 => [157, 63],
-    6 => [160, 64],
-    7 => [162, 66],
-    8 => [165, 68],
-    9 => [169, 70],
+     2 => [150, 58],
+     3 => [152, 60],
+     4 => [155, 61],
+     5 => [157, 63],
+     6 => [160, 64],
+     7 => [162, 66],
+     8 => [165, 68],
+     9 => [169, 70],
     10 => [174, 74],
     11 => [177, 77],
     12 => [182, 81],
@@ -80,14 +80,14 @@ class Rules::HeightWeight
   }
 
   HALFLING_HEIGHT_WEIGHT_MAPPING = {
-    2 => [96, 17],
-    3 => [100, 19],
-    4 => [102, 20],
-    5 => [104, 21],
-    6 => [106, 22],
-    7 => [107, 23],
-    8 => [109, 24],
-    9 => [111, 25],
+     2 => [96, 17],
+     3 => [100, 19],
+     4 => [102, 20],
+     5 => [104, 21],
+     6 => [106, 22],
+     7 => [107, 23],
+     8 => [109, 24],
+     9 => [111, 25],
     10 => [113, 27],
     11 => [114, 30],
     12 => [117, 32],
@@ -102,14 +102,14 @@ class Rules::HeightWeight
   }
 
   DWARF_HEIGHT_WEIGHT_MAPPING = {
-    2 => [120, 34],
-    3 => [123, 36],
-    4 => [125, 37],
-    5 => [127, 39],
-    6 => [130, 41],
-    7 => [133, 43],
-    8 => [135, 46],
-    9 => [136, 48],
+     2 => [120, 34],
+     3 => [123, 36],
+     4 => [125, 37],
+     5 => [127, 39],
+     6 => [130, 41],
+     7 => [133, 43],
+     8 => [135, 46],
+     9 => [136, 48],
     10 => [138, 50],
     11 => [139, 53],
     12 => [140, 55],
@@ -123,15 +123,15 @@ class Rules::HeightWeight
     20 => [154, 70],
   }
 
-  ELFS_HEIGHT_WEIGHT_MAPPING = {
-    2 => [137, 32],
-    3 => [141, 34],
-    4 => [144, 37],
-    5 => [148, 39],
-    6 => [150, 41],
-    7 => [152, 43],
-    8 => [156, 46],
-    9 => [158, 48],
+  ELF_HEIGHT_WEIGHT_MAPPING = {
+     2 => [137, 32],
+     3 => [141, 34],
+     4 => [144, 37],
+     5 => [148, 39],
+     6 => [150, 41],
+     7 => [152, 43],
+     8 => [156, 46],
+     9 => [158, 48],
     10 => [160, 50],
     11 => [163, 53],
     12 => [164, 55],
@@ -146,14 +146,14 @@ class Rules::HeightWeight
   }
 
   HALF_ELF_HEIGHT_WEIGHT_MAPPING = {
-    2 => [139, 44],
-    3 => [143, 49],
-    4 => [147, 54],
-    5 => [150, 58],
-    6 => [155, 61],
-    7 => [158, 63],
-    8 => [160, 64],
-    9 => [163, 67],
+     2 => [139, 44],
+     3 => [143, 49],
+     4 => [147, 54],
+     5 => [150, 58],
+     6 => [155, 61],
+     7 => [158, 63],
+     8 => [160, 64],
+     9 => [163, 67],
     10 => [165, 68],
     11 => [168, 69],
     12 => [173, 71],

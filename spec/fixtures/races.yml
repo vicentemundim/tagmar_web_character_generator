@@ -48,7 +48,7 @@ dwarf:
   physical_modifier: 2
   agility_modifier: 0
 
-florestal_elf:
+wood_elf:
   name: Elfo Florestal
   description: Um elfo das florestas
   intelect_modifier: 1
