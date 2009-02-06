@@ -1,0 +1,16 @@
+<p>
+  <strong>Nome:</strong><%=h @skill.name %>
+</p>
+<p>
+  <strong>Descrição:</strong><%=h @skill.description %>
+</p>
+<p>
+  <strong>Atributo base:</strong><%=h @skill.base_attribute %>
+</p>
+<p>
+  <strong>Custo:</strong><%=h @skill.cost %>
+</p>
+
+<%= link_to 'Editar', edit_object_url %>
+|
+<%= link_to 'Voltar', collection_url %>

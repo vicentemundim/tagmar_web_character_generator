@@ -1,0 +1,176 @@
+# == Schema Information
+# Schema version: 20090206220550
+#
+# Table name: skills
+#
+#  id             :integer(4)      not null, primary key
+#  identifier     :string(255)
+#  name           :string(255)
+#  description    :text
+#  base_attribute :string(255)
+#  cost           :integer(4)
+#  created_at     :datetime
+#  updated_at     :datetime
+#
+
+stealth_action:
+  identifier: stealth_action
+  name: Ações Furtivas
+  base_attribute: agility
+  cost: 2
+
+surprise_attack:
+  identifier: surprise_attack
+  name: Ataque Surpresa
+  base_attribute: 
+  cost: 1
+
+releasing_locks:
+  identifier: releasing_locks
+  name: Destravar Fechaduras
+  base_attribute: agility
+  cost: 1
+
+disguises:
+  identifier: disguises
+  name: Disfarces
+  base_attribute: intelect
+  cost: 1
+
+stealing:
+  identifier: stealing
+  name: Furtar Objetos
+  base_attribute: agility
+  cost: 1
+
+handling_traps:
+  identifier: handling_traps
+  name: Manusear Armadilhas
+  base_attribute: intelect
+  cost: 2
+
+acrobatics:
+  identifier: acrobatics
+  name: Acrobacias
+  base_attribute: agility
+  cost: 2
+
+climbing:
+  identifier: climbing
+  name: Escalar Superfícies
+  base_attribute: agility
+  cost: 2
+
+dodge:
+  identifier: dodge
+  name: Esquiva
+  base_attribute: agility
+  cost: 1
+
+ride_animals:
+  identifier: ride_animals
+  name: Montar Animais
+  base_attribute: agility
+  cost: 1
+
+swimming:
+  identifier: swimming
+  name: Natação
+  base_attribute: physical
+  cost: 1
+
+singing:
+  identifier: singing
+  name: Canto
+  base_attribute: charisma
+  cost: 1
+
+trading:
+  identifier: trading
+  name: Comércio
+  base_attribute: charisma
+  cost: 2
+
+dancing:
+  identifier: dancing
+  name: Dança
+  base_attribute: agility
+  cost: 1
+
+leadership:
+  identifier: leadership
+  name: Liderança
+  base_attribute: charisma
+  cost: 2
+
+music:
+  identifier: music
+  name: Música Instrumental
+  base_attribute: agility
+  cost: 1
+
+persuasion:
+  identifier: persuasion
+  name: Persuasão
+  base_attribute: charisma
+  cost: 2
+
+carpentry:
+  identifier: carpentry
+  name: Carpintaria
+  base_attribute: agility
+  cost: 1
+
+medicine:
+  identifier: medicine
+  name: Medicina
+  base_attribute: intelect
+  cost: 2
+
+navigation:
+  identifier: navigation
+  name: Navegação
+  base_attribute: intelect
+  cost: 1
+
+metal_works:
+  identifier: metal_works
+  name: Trabalho em Metal
+  base_attribute:
+  cost: 2
+
+handcraftsmanship:
+  identifier: handcraftsmanship
+  name: Trabalhos Manuais
+  base_attribute: agility
+  cost: 1
+
+writing:
+  identifier: writing
+  name: Escrita
+  base_attribute: intelect
+  cost: 3
+
+languages:
+  identifier: languages
+  name: Línguas
+  base_attribute: intelect
+  cost: 3
+
+perception:
+  identifier: perception
+  name: Percepção
+  base_attribute: intelect
+  cost: 2
+
+follow_paths:
+  identifier: follow_paths
+  name: Seguir Trilhas
+  base_attribute: intelect
+  cost: 2
+
+training_animals:
+  identifier: training_animals
+  name: Treinar Animais
+  base_attribute: intelect
+  cost: 1

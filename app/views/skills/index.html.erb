@@ -1,0 +1,20 @@
+<h1>Habilidades</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Atributo base</th>
+    <th>Custo</th>
+  </tr>
+  <%- @skills.each do |skill|%>
+    <tr>
+      <td><%=h skill.name %></td>
+      <td><%=h Rules::Attributes::NAMES[skill.base_attribute] %></td>
+      <td><%=h skill.cost %></td>
+    
+      <td><%=link_to 'Exibir', object_url(skill) %></td>
+      <td><%=link_to 'Editar', edit_object_url(skill) %></td>
+    </tr>
+  <% end %>
+</table>
+<br/>

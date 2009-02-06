@@ -10,6 +10,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :professions, :only => [:index, :show, :edit, :update]
   map.resources :races, :only => [:index, :show, :edit, :update]
+  map.resources :skills, :only => [:index, :show, :edit, :update]
 
   map.resource :session
 

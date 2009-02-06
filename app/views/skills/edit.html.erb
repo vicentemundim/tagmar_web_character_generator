@@ -1,0 +1,16 @@
+<h1>Editando Habilidade</h1>
+
+<%= error_messages_for :skill %>
+
+<% form_for(:skill, :url => object_url, :html => { :method => :put }) do |f| %>
+  <%= render :partial => "form", :locals => { :f => f } %>
+  <p>
+    <%=submit_tag "Atualizar"%>
+  </p>
+<% end %>
+
+<br/>
+
+<%= link_to 'Exibir', object_url %>
+|
+<%= link_to 'Voltar', collection_url %>
