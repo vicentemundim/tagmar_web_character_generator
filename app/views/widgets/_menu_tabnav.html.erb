@@ -24,5 +24,11 @@ render_tabnav :menu do
     t.titled 'Gerencie as raças'
     t.links_to :controller => 'races'
   end if is_admin?
+
+  add_tab do |t|
+    t.named 'Profissões'
+    t.titled 'Gerencie as profissões'
+    t.links_to :controller => 'professions'
+  end if is_admin?
 end 
 -%>
