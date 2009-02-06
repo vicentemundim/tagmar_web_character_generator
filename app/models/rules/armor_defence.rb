@@ -1,4 +1,4 @@
-class ArmorDefence
+class Rules::ArmorDefence
   class << self
     def defence_for(agility, armor)
       mapping = MAPPING.has_key?(armor) ? MAPPING[armor] : MAPPING['nothing']
