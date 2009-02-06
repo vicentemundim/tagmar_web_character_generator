@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090201155840
+# Schema version: 20090205233430
 #
 # Table name: users
 #
@@ -13,6 +13,7 @@
 #  updated_at                :datetime
 #  remember_token            :string(40)
 #  remember_token_expires_at :datetime
+#  is_admin                  :boolean(1)
 #
 
 vicente:
@@ -24,3 +25,12 @@ vicente:
   created_at: <%= 5.days.ago.to_s :db  %>
   remember_token_expires_at: <%= 1.days.from_now.to_s %>
   remember_token: 77de68daecd823babbb58edb1c8e14d7106e83bb
+
+admin:
+  id: 2
+  login: admin
+  email: admin@tagmarwebcharactergenerator.com
+  salt: 4c0905f0b0b0c7dfffa83ce14e32a7ac83e6110d
+  crypted_password: 5876336f9cc33e50991c01b66c8cf3e8abcd99c8       #=> 123456
+  created_at: <%= Time.now.to_s :db  %>
+  is_admin: true

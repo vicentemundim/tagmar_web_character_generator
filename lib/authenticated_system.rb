@@ -6,6 +6,11 @@ module AuthenticatedSystem
       !!current_user
     end
 
+    # Returns true if the current user is an administrator.
+    def is_admin?
+      logged_in? and current_user.is_admin?
+    end
+
     # Accesses the current user from the session.
     # Future calls avoid the database because nil is not equal to false.
     def current_user
@@ -51,6 +56,11 @@ module AuthenticatedSystem
     #
     def login_required
       authorized? || access_denied
+    end
+
+    # Filter method to enforce an admin login requirement.
+    def admin_login_required
+      login_required || is_admin?
     end
 
     # Redirect as appropriate when an access request fails.

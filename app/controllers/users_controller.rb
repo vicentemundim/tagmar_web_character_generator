@@ -1,6 +1,4 @@
-class UsersController < ApplicationController
-  resource_controller
-
+class UsersController < ResourceController::Base
   before_filter :prevent_user_update_other_users_data, :only => [:edit, :update]
 
   create do
