@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
     users.resources :characters
   end
 
+  map.resources :professions
   map.resources :races
 
   map.resource :session

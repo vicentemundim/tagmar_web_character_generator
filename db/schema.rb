@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090206011240) do
+ActiveRecord::Schema.define(:version => 20090206212949) do
 
   create_table "characters", :force => true do |t|
     t.string   "name"
@@ -17,6 +17,16 @@ ActiveRecord::Schema.define(:version => 20090206011240) do
     t.integer  "age"
     t.integer  "level"
     t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "professions", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "skill_points_per_level"
+    t.integer  "combat_points_per_level"
+    t.boolean  "can_use_magic"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
