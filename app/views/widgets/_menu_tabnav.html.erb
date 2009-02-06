@@ -18,5 +18,11 @@ render_tabnav :menu do
     t.links_to user_characters_path(current_user)
     t.highlights_on :controller => 'characters'
   end if logged_in?
+
+  add_tab do |t|
+    t.named 'Raças'
+    t.titled 'Gerencie as raças'
+    t.links_to :controller => 'races'
+  end if is_admin?
 end 
 -%>

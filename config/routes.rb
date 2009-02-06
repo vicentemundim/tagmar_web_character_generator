@@ -8,6 +8,8 @@ ActionController::Routing::Routes.draw do |map|
     users.resources :characters
   end
 
+  map.resources :races
+
   map.resource :session
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,21 +1,79 @@
+# == Schema Information
+# Schema version: 20090205233430
+#
+# Table name: races
+#
+#  id                :integer(4)      not null, primary key
+#  name              :string(255)
+#  description       :text
+#  intelect_modifier :integer(4)
+#  aura_modifier     :integer(4)
+#  charisma_modifier :integer(4)
+#  strengh_modifier  :integer(4)
+#  physical_modifier :integer(4)
+#  agility_modifier  :integer(4)
+#  created_at        :datetime
+#  updated_at        :datetime
+#
+
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  description: MyText
-  intelect_modifier: 1
-  aura_modifier: 1
-  charisma_modifier: 1
+human:
+  name: Humano
+  description: Um humano é um ser normal
+  intelect_modifier: 0
+  aura_modifier: 0
+  charisma_modifier: 0
+  strengh_modifier: 0
+  physical_modifier: 0
+  agility_modifier: 0
+
+halfling:
+  name: Pequenino
+  description: Um cara muito pequeno
+  intelect_modifier: 0
+  aura_modifier: 0
+  charisma_modifier: 0
+  strengh_modifier: -2
+  physical_modifier: -1
+  agility_modifier: 2
+
+dwarf:
+  name: Anão
+  description: Um cara pequeno e gordo
+  intelect_modifier: 0
+  aura_modifier: 0
+  charisma_modifier: -1
   strengh_modifier: 1
-  physical_modifier: 1
+  physical_modifier: 2
+  agility_modifier: 0
+
+florestal_elf:
+  name: Elfo Florestal
+  description: Um elfo das florestas
+  intelect_modifier: 1
+  aura_modifier: 0
+  charisma_modifier: 1
+  strengh_modifier: 0
+  physical_modifier: -1
   agility_modifier: 1
 
-two:
-  name: MyString
-  description: MyText
-  intelect_modifier: 1
+golden_elf:
+  name: Elfo Dourado
+  description: Um elfo dourado
+  intelect_modifier: 2
   aura_modifier: 1
   charisma_modifier: 1
-  strengh_modifier: 1
-  physical_modifier: 1
+  strengh_modifier: -1
+  physical_modifier: -2
   agility_modifier: 1
+
+half_elf:
+  name: Meio Elfo
+  description: Meio humano, meio elfo
+  intelect_modifier: 0
+  aura_modifier: 0
+  charisma_modifier: 1
+  strengh_modifier: 0
+  physical_modifier: 0
+  agility_modifier: 0
