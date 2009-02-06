@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090204223339
+# Schema version: 20090206011240
 #
 # Table name: races
 #
@@ -14,6 +14,7 @@
 #  agility_modifier  :integer(4)
 #  created_at        :datetime
 #  updated_at        :datetime
+#  identifier        :string(255)
 #
 
 class Race < ActiveRecord::Base

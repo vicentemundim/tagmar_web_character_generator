@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090205233430
+# Schema version: 20090206011240
 #
 # Table name: races
 #
@@ -14,11 +14,13 @@
 #  agility_modifier  :integer(4)
 #  created_at        :datetime
 #  updated_at        :datetime
+#  identifier        :string(255)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 human:
+  identifier: human
   name: Humano
   description: Um humano é um ser normal
   intelect_modifier: 0
@@ -29,6 +31,7 @@ human:
   agility_modifier: 0
 
 halfling:
+  identifier: halfling
   name: Pequenino
   description: Um cara muito pequeno
   intelect_modifier: 0
@@ -39,6 +42,7 @@ halfling:
   agility_modifier: 2
 
 dwarf:
+  identifier: dwarf
   name: Anão
   description: Um cara pequeno e gordo
   intelect_modifier: 0
@@ -49,6 +53,7 @@ dwarf:
   agility_modifier: 0
 
 wood_elf:
+  identifier: wood_elf
   name: Elfo Florestal
   description: Um elfo das florestas
   intelect_modifier: 1
@@ -59,6 +64,7 @@ wood_elf:
   agility_modifier: 1
 
 golden_elf:
+  identifier: golden_elf
   name: Elfo Dourado
   description: Um elfo dourado
   intelect_modifier: 2
@@ -69,6 +75,7 @@ golden_elf:
   agility_modifier: 1
 
 half_elf:
+  identifier: half_elf
   name: Meio Elfo
   description: Meio humano, meio elfo
   intelect_modifier: 0
