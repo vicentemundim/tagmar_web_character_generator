@@ -19,7 +19,8 @@ class UsersController < ResourceController::Base
     failure.flash "Corrija os erros abaixo."
   end
 
-  update.wants.html { redirect_to('/') }
+  update.wants.html { redirect_to edit_user_path(@user) }
+  update.flash "Perfil atualizado com sucesso"
 
   def prevent_user_update_other_users_data
     unless current_user.id.to_s == params[:id]

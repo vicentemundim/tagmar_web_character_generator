@@ -69,3 +69,11 @@
   text-align: center;
   font-size: 0.6em;
 }
+
+.bigAvatar img {
+  width: 80px;
+}
+
+.smallAvatar image {
+  width: 40px;
+}

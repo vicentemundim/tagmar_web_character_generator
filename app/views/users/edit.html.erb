@@ -1,18 +1,24 @@
-<h1>Atualizando seus dados</h1>
+<h1>Atualizando seu perfil</h1>
 
 <p class="formDescription">Preencha os campos abaixo:</p>
 
-<% form_for @user, :url => users_path do |f| -%>
+<% form_for(:user, :url => object_url, :html => { :method => :put }) do |f| -%>
 <fieldset>
   <div class="helpBox">
-    <h3>O que fazer?</h3>
-    <p>Preencha o formulário ao lado e clique em atualizar.</p>
+    <h3>Você sabia?</h3>
+    <p>
+      Utilize um email cadastrado no <strong><%= link_to 'Gravatar', 'http://gravatar.com' -%></strong>
+      para ter seu avatar exibido.
+    </p>
   </div>
 
   <%= render :partial => "form", :locals => { :f => f } %>
+  <div class="bigAvatar">
+    <%= image_tag avatar_url -%>
+  </div>
 </fieldset>
 
 <div class="formControls">
-  <%= submit_tag "atualizar dados" %>
+  <%= submit_tag "atualizar perfil" %>
 </div>
 <% end -%>

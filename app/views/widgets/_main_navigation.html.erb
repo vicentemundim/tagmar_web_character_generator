@@ -15,6 +15,11 @@ render_navigation :main do
   end unless logged_in?
 
   add_item do |i|
+    i.named current_user.login
+    i.disable!
+  end if logged_in?
+
+  add_item do |i|
     i.named 'meu perfil'
     i.links_to edit_user_path(current_user)
   end if logged_in?
