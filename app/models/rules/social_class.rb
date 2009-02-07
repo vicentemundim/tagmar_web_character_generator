@@ -30,14 +30,14 @@ class Rules::SocialClass
   end
 
   SOCIAL_CLASSES = {
-    'ex_slave'          => {:name => "Ex-escravo",          :coper_coins =>  10, :silver_coins =>  4, :gold_coins => 0},
-    'ex_serf'           => {:name => "Ex-servo",            :coper_coins =>  15, :silver_coins =>  8, :gold_coins => 0},
-    'free'              => {:name => "Livre",               :coper_coins =>  20, :silver_coins => 13, :gold_coins => 0},
-    'small_trader'      => {:name => "Pequeno comerciante", :coper_coins =>  30, :silver_coins => 17, :gold_coins => 0},
-    'handicraftsman'    => {:name => "Artíficie",           :coper_coins =>  40, :silver_coins => 21, :gold_coins => 1},
-    'big_trader'        => {:name => "Grande comerciante",  :coper_coins =>  50, :silver_coins => 35, :gold_coins => 1},
-    'low_nobility'      => {:name => "Baixa nobreza",       :coper_coins =>  60, :silver_coins => 40, :gold_coins => 2},
-    'high_nobility'     => {:name => "Alta nobreza",        :coper_coins => 100, :silver_coins => 50, :gold_coins => 3},
+    'ex_slave'          => {:name => "Ex-escravo",          :bronze_coins =>  10, :silver_coins =>  4, :gold_coins => 0},
+    'ex_serf'           => {:name => "Ex-servo",            :bronze_coins =>  15, :silver_coins =>  8, :gold_coins => 0},
+    'free'              => {:name => "Livre",               :bronze_coins =>  20, :silver_coins => 13, :gold_coins => 0},
+    'small_trader'      => {:name => "Pequeno comerciante", :bronze_coins =>  30, :silver_coins => 17, :gold_coins => 0},
+    'handicraftsman'    => {:name => "Artíficie",           :bronze_coins =>  40, :silver_coins => 21, :gold_coins => 1},
+    'big_trader'        => {:name => "Grande comerciante",  :bronze_coins =>  50, :silver_coins => 35, :gold_coins => 1},
+    'low_nobility'      => {:name => "Baixa nobreza",       :bronze_coins =>  60, :silver_coins => 40, :gold_coins => 2},
+    'high_nobility'     => {:name => "Alta nobreza",        :bronze_coins => 100, :silver_coins => 50, :gold_coins => 3},
   }
 
   HALFLING_SOCIAL_CLASS_MAPPING = {
