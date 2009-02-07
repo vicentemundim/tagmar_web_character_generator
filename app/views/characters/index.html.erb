@@ -1,7 +1,12 @@
 <h1>Seus personagens</h1>
 
 <%- content_for :sidebar do -%>
-  asd
+  <h3><%= link_to 'Criar Personagem', new_user_character_path(current_user) -%></h3>
+  <hr />
+  <p>
+    Escolha um personagem na listagem ao lado ou crie um personagem clicando no
+    link acima.
+  </p>
 <%- end -%>
 
 <%- if @characters.empty? -%>

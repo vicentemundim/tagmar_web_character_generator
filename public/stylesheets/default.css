@@ -54,6 +54,11 @@ h4 {
   color: #5E3C09;
 }
 
+hr {
+  margin: 10px 5px;
+  border: 1px dotted #d9dba6;
+}
+
 p {
   font-size: 0.9em;
   margin: 10px;
