@@ -9,10 +9,10 @@
   margin: 0px 10px;
   width: 500px;
   background-color: #ebf6ce;
-  -moz-border-radius-bottomleft:12px;
-	-moz-border-radius-bottomright:12px;
-	-moz-border-radius-topleft:12px;
-	-moz-border-radius-topright:12px;
+  -moz-border-radius-bottomleft: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright :12px;
   border-top: 1px solid #d9dba6;
 	border-right: 1px solid #d9dba6;
 	border-bottom: 2px solid #d9dba6;
@@ -41,9 +41,10 @@
   display: none;
 	width: 230px;
 	height: auto;
+  clear: right;
 	float: right;
 	background-color: #ebf6ce;
-	margin: 15px 15px 15px 0px;
+	margin: 40px 15px 15px 0px;
 	-moz-border-radius-bottomleft: 12px;
 	-moz-border-radius-bottomright: 12px;
 	-moz-border-radius-topleft: 12px;
@@ -60,6 +61,7 @@
   width: 100%;
   padding: 0px;
   margin: 0px;
+  clear: both;
 }
 
 #footer p {

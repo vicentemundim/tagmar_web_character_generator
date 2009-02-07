@@ -20,11 +20,12 @@
 
   <div id="content">
     <%= yield :message -%>
-    <%= yield -%>
-  </div>
 
-  <div id="sidebar">
-    <%= yield :sidebar -%>
+    <div id="sidebar" <%= sidebar_enabled? -%>>
+      <%= yield :sidebar -%>
+    </div>
+
+    <%= yield -%>
   </div>
 
   <div id="footer">

@@ -1,6 +1,7 @@
 class CharactersController < ResourceController::Base
   before_filter :login_required
   before_filter :prevent_user_to_update_other_users_characters, :only => [:new, :create, :edit, :update]
+  before_filter :enable_sidebar
 
   belongs_to :user
 

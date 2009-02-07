@@ -1,25 +1,19 @@
-<h1>Your Characters</h1>
+<h1>Seus personagens</h1>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Biography</th>
-    <th>Age</th>
-    <th>Level</th>
-  </tr>
+<%- content_for :sidebar do -%>
+  asd
+<%- end -%>
+
+<%- if @characters.empty? -%>
+  <p>Você ainda não criou nenhum personagem. Deseja <%= link_to 'criar', new_user_character_path(current_user) -%> um agora?</p>
+<%- else -%>
+  <div id="character-listing">
   <%- @characters.each do |character|%>
-    <tr>
-      <td><%=h character.name %></td>
-      <td><%=h character.biography %></td>
-      <td><%=h character.age %></td>
-      <td><%=h character.level %></td>
-    
-      <td><%=link_to 'Show', object_url(character) %></td>
-      <td><%=link_to 'Edit', edit_object_url(character) %></td>
-      <td><%=link_to 'Destroy', object_url(character), :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
+    <div class="characterListingBox">
+      <h3><%= link_to character.name, edit_user_character_path(current_user, character) -%></h3>
+      <span class="age"><%=h displayable_age_for(character) -%></span>
+      <span class="level"><%=h displayable_level_for(character) -%></span>
+    </div>
   <% end %>
-</table>
-<br/>
-
-<%= link_to 'New Character', new_object_url %>
+  </div>
+<%- end -%>

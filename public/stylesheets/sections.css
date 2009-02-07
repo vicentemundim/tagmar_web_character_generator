@@ -4,3 +4,35 @@
   margin-left: 160px;
 }
 
+/* characters listing */
+
+#character-listing {
+  margin: 0px 0px 100px;
+  width: 500px;
+}
+
+.characterListingBox {
+  float: left;
+  margin: 0px 10px;
+  padding: 5px;
+  width: 150px;
+  background-color: #E2F0D6;
+  -moz-border-radius-bottomleft: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+  border-top: 2px solid #324001;
+	border-right: 2px solid #324001;
+	border-bottom: 2px solid #324001;
+	border-left: 2px solid #324001;
+}
+
+.characterListingBox h3 {
+  margin: 0px 5px;
+}
+
+.characterListingBox .age, .characterListingBox .level {
+  margin: 0px 5px;
+  color: #000;
+  display: block;
+}

@@ -16,4 +16,8 @@ class ApplicationController < ActionController::Base
   include AuthenticatedSystem
 
   layout "main"
+
+  def enable_sidebar
+    @sidebar_enabled = true
+  end
 end
