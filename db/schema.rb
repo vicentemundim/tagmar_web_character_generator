@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090206224801) do
+ActiveRecord::Schema.define(:version => 20090207212756) do
 
   create_table "belongings", :force => true do |t|
     t.string   "type"
@@ -39,6 +39,26 @@ ActiveRecord::Schema.define(:version => 20090206224801) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "race_id"
+    t.integer  "profession_id"
+    t.string   "god"
+    t.string   "social_class"
+    t.integer  "intelect"
+    t.integer  "aura"
+    t.integer  "charisma"
+    t.integer  "strengh"
+    t.integer  "physical"
+    t.integer  "agility"
+    t.integer  "current_experience"
+    t.integer  "physical_energy"
+    t.integer  "heroic_energy"
+    t.integer  "combat_accumulated_points"
+    t.integer  "magic_accumulated_points"
+    t.integer  "skill_accumulated_points"
+    t.string   "focus"
+    t.integer  "current_bronze_coins"
+    t.integer  "current_silver_coins"
+    t.integer  "current_gold_coins"
   end
 
   create_table "professions", :force => true do |t|
