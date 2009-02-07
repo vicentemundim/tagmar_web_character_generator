@@ -15,7 +15,7 @@
   <div id="character-listing">
   <%- @characters.each do |character|%>
     <div class="characterListingBox">
-      <h3><%= link_to character.name, edit_user_character_path(current_user, character) -%></h3>
+      <h3><%= link_to character.name, user_character_path(current_user, character) -%></h3>
       <span class="age"><%=h displayable_age_for(character) -%></span>
       <span class="level"><%=h displayable_level_for(character) -%></span>
     </div>

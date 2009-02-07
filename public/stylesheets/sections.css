@@ -36,3 +36,28 @@
   color: #000;
   display: block;
 }
+
+/* character sheet */
+
+#character-sheet {
+}
+
+#character-sheet h3 a {
+  font-size: 0.6em;
+}
+
+#character-sheet #basic-data {
+  -moz-border-radius-bottomleft: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+  border: 1px solid #324001;
+  background-color: #E2F0D6;
+  margin: 3px 10px;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+#character-sheet #basic-data span {
+  display: block;
+}

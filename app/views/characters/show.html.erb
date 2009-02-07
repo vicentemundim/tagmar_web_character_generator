@@ -1,16 +1,17 @@
-<p>
-  <strong>Name:</strong><%=h @character.name %>
-</p>
-<p>
-  <strong>Biography:</strong><%=h @character.biography %>
-</p>
-<p>
-  <strong>Age:</strong><%=h @character.age %>
-</p>
-<p>
-  <strong>Level:</strong><%=h @character.level %>
-</p>
+<%- content_for :sidebar do -%>
+  <h3><%= link_to 'Editar Personagem', edit_user_character_path(current_user, @character) -%></h3>
+  <hr />
+  <p>
+    Para editar este personagem clique no link acima.
+  </p>
+<%- end -%>
 
-<%= link_to 'Edit', edit_object_url %>
-|
-<%= link_to 'Back', collection_url %>
+<div id="character-sheet">
+  <h1><%=h @character.name -%></h1>
+
+<h3>Dados Básicos <%= toggler_for 'basic-data', 'basic-data-toggler' -%></h2>
+  <div id="basic-data">
+    <span class="age"><%= displayable_age_for(@character) -%></span>
+    <span class="level"><%= displayable_level_for(@character) -%></span>
+  </div>
+</div>
