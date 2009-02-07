@@ -3,6 +3,16 @@
   <%= tabnav :menu -%>
 <%- end -%>
 
+<%- content_for :message do -%>
+  <%- if flash[:notice] -%>
+    <div id="message"><p class="notice"><%= flash[:notice] -%></p></div>
+  <%- elsif flash[:warning] -%>
+    <div id="message"><p class="warning"><%= flash[:warning] -%></p></div>
+  <%- elsif flash[:error] -%>
+    <div id="message"><p class="error"><%= flash[:error] -%></p></div>
+  <%- end -%>
+<%- end -%>
+
 <%- content_for :footer do -%>
   <p>&copy; Vicente Mundim - Todos os direitos reservados.</p>
 <%- end -%>

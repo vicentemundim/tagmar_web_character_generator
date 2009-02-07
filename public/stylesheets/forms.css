@@ -1,0 +1,84 @@
+input {
+  border: 1px solid #324001;
+  padding: 2px;
+}
+
+p.formDescription {
+  font-size: 0.8em;
+  color: #324001;
+}
+
+form fieldset {
+  border: 0px;
+  border-top: 1px solid #324001;
+  border-bottom: 1px solid #324001;
+  background-color: #E2F0D6;
+  margin: 10px;
+}
+
+form label {
+  font-size: 0.8em;
+  line-height: 1.8em;
+  width: 150px;
+  float: left;
+  text-align: right;
+  padding-right: 10px;
+}
+
+form fieldset .helpBox {
+  width: 230px;
+	height: auto;
+	float: right;
+	background-color: #F6FFE0;
+	margin: 15px 15px 15px 0px;
+	-moz-border-radius-bottomleft: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
+	border-top: 3px solid #324001;
+	border-right: 3px solid #324001;
+	border-bottom: 6px solid #324001;
+	border-left: 6px solid #324001;
+	padding: 12px;
+}
+
+.fieldWithErrors label {
+  font-weight: bold;
+  color: #ff8705;
+}
+
+.formError {
+  font-size: 0.6em;
+  margin-left: 160px;
+  color: #ff8705;
+  padding-top: 2px;
+}
+
+.formControls {
+  margin: 10px;
+}
+
+.formControls input {
+  border: 1px solid #324001;
+  background-color: #ebf6ce;
+}
+
+.textField {
+  width: 500px;
+  margin: 10px 0px;
+}
+
+.textField .fieldWithErrors input {
+  border: 1px solid #ff8705;
+}
+
+.checkboxField {
+  width: 500px;
+  margin: 10px 0px 10px 160px;
+}
+
+.checkboxField label {
+  float: none;
+  text-align: left;
+  width: auto;
+}

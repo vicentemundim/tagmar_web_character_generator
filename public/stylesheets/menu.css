@@ -27,10 +27,10 @@
   color: #000;
   background-color: #FDFDFD;
 
--moz-border-radius-bottomleft:0px;
--moz-border-radius-bottomright:0px;
--moz-border-radius-topleft:12px;
--moz-border-radius-topright:12px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-topleft: 12px;
+  -moz-border-radius-topright: 12px;
 
   border: 3px solid #95AB63;
   border-bottom: none;
@@ -42,12 +42,12 @@
 .menu_tabnav a, .menu_tabnav a:visited, .menu_tabnav a.active {
   color: #548000;
   font-weight: normal;
-background-color: #eaf0db;
+  background-color: #eaf0db;
 
--moz-border-radius-bottomleft:0px;
--moz-border-radius-bottomright:0px;
--moz-border-radius-topleft:12px;
--moz-border-radius-topright:12px;
+  -moz-border-radius-bottomleft: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-topleft: 12px;
+  -moz-border-radius-topright: 12px;
 
   border: 3px solid #548000;
   padding: 2px 8px 2px 8px;

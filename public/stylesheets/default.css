@@ -3,7 +3,7 @@ html {
   padding: 0px;
   background-color: #F6FFE0;
   font-family: Verdana, Helvetica, Arial;
-  font-size: 1.0em;
+  font-size: 16px;
   height: 100%;
 }
 
@@ -18,14 +18,37 @@ body {
 
 a {
   text-decoration: none;
-  color: #10222B;
+  color: #1E2601;
 }
 
 a:visited {
   text-decoration: none;
-  color: #245b77;
+  color: #618C03;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 10px;
+  color: #5E3C09;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin: 10px;
+  color: #5E3C09;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 0px 10px;
+  color: #5E3C09;
+}
+
+p {
+  font-size: 0.9em;
+  margin: 10px;
 }

@@ -4,17 +4,50 @@
 	background: transparent url(/images/header_background.jpg) no-repeat top left;
 }
 
+#message {
+  float: right;
+  margin: 0px 10px;
+  width: 500px;
+  background-color: #ebf6ce;
+  -moz-border-radius-bottomleft:12px;
+	-moz-border-radius-bottomright:12px;
+	-moz-border-radius-topleft:12px;
+	-moz-border-radius-topright:12px;
+  border-top: 1px solid #d9dba6;
+	border-right: 1px solid #d9dba6;
+	border-bottom: 2px solid #d9dba6;
+	border-left: 2px solid #d9dba6;
+  clear: both;
+  font-weight: bold;
+  min-height: 25px;
+}
+
+#message .notice, #message .warning, #message .error {
+  padding-left: 33px;
+  background: transparent url(/images/important.png) no-repeat scroll left center;
+  line-height: 1.4em;
+  font-size: 1.0em;
+}
+
+#message .warning {
+  color: #0005dc;
+}
+
+#message .error {
+  color: #ff8705;
+}
+
 #sidebar {
   display: none;
 	width: 230px;
 	height: auto;
 	float: right;
-	background-color:#ebf6ce;
+	background-color: #ebf6ce;
 	margin: 15px 15px 15px 0px;
-	-moz-border-radius-bottomleft:12px;
-	-moz-border-radius-bottomright:12px;
-	-moz-border-radius-topleft:12px;
-	-moz-border-radius-topright:12px;
+	-moz-border-radius-bottomleft: 12px;
+	-moz-border-radius-bottomright: 12px;
+	-moz-border-radius-topleft: 12px;
+	-moz-border-radius-topright: 12px;
 	border-top: 3px solid #d9dba6;
 	border-right: 3px solid #d9dba6;
 	border-bottom: 6px solid #d9dba6;

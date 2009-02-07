@@ -10,7 +10,7 @@
   <%= yield :additional_javascripts -%>
 
 
-  <%= stylesheet_link_tag 'default', 'layout' -%>
+  <%= stylesheet_link_tag 'default', 'layout', 'forms' -%>
   <%= yield :additional_stylesheets -%>
 </head>
 <body>
@@ -19,6 +19,7 @@
   </div>
 
   <div id="content">
+    <%= yield :message -%>
     <%= yield -%>
   </div>
 
