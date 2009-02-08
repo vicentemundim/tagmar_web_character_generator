@@ -6,4 +6,12 @@ module CharactersHelper
   def displayable_level_for(character)
     "Estágio #{character.level}"
   end
+
+  def displayable_social_class_for(character)
+    Rules::SocialClass::SOCIAL_CLASSES[character.social_class][:name] unless character.social_class.blank?
+  end
+
+  def displayable_god_for(character)
+    character.god.titleize unless character.god.blank?
+  end
 end

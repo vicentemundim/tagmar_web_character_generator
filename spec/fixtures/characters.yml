@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090207212756
+# Schema version: 20090208154552
 #
 # Table name: characters
 #
@@ -12,7 +12,7 @@
 #  created_at                :datetime
 #  updated_at                :datetime
 #  race_id                   :integer(4)
-#  profession                :integer(4)
+#  profession_id             :integer(4)
 #  god                       :string(255)
 #  social_class              :string(255)
 #  intelect                  :integer(4)
@@ -31,5 +31,36 @@
 #  current_bronze_coins      :integer(4)
 #  current_silver_coins      :integer(4)
 #  current_gold_coins        :integer(4)
+#  height                    :integer(4)
+#  weight                    :integer(4)
 #
 
+ugolf:
+  id: 1
+  user_id: 1
+  name: Ugolf Yaevin
+  biography: Ugolf viveu sua infância inteira na floresta de Gaelia, onde aprendeu a caçar e sobreviver. Após chegar a idade adulta resolveu conhecer o mundo e saiu em busca de aventuras.
+  age: 20
+  level: 1
+  race_id: 4
+  profession_id: 5
+  god: maira vet
+  social_class: free
+  height: 170
+  weight: 62
+  intelect: 17
+  aura: 16
+  charisma: 13
+  strengh: 18
+  physical: 20
+  agility: 19
+  current_experience: 0
+  physical_energy: 17
+  heroic_energy: 15
+  combat_accumulated_points: 0
+  magic_accumulated_points: 0
+  skill_accumulated_points: 0
+  focus: Cordão de Maira
+  current_bronze_coins: 15
+  current_silver_coins: 0
+  current_gold_coins: 0

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090207212756) do
+ActiveRecord::Schema.define(:version => 20090208154552) do
 
   create_table "belongings", :force => true do |t|
     t.string   "type"
@@ -59,6 +59,8 @@ ActiveRecord::Schema.define(:version => 20090207212756) do
     t.integer  "current_bronze_coins"
     t.integer  "current_silver_coins"
     t.integer  "current_gold_coins"
+    t.integer  "height"
+    t.integer  "weight"
   end
 
   create_table "professions", :force => true do |t|
