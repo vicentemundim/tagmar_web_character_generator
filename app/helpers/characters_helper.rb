@@ -14,4 +14,8 @@ module CharactersHelper
   def displayable_god_for(character)
     character.god.titleize unless character.god.blank?
   end
+
+  def signed(value)
+    (value > 0) ? "+#{value}" : value
+  end
 end

@@ -39,4 +39,32 @@ class Character < ActiveRecord::Base
   belongs_to :user
   belongs_to :race
   belongs_to :profession
+
+  %w(intelect aura charisma strengh physical agility).each do |attribute|
+    class_eval <<-class_eval
+      def #{attribute}_modifier
+        racial_modifier_for(:#{attribute})
+      end
+
+      def final_value_for_#{attribute}
+        final_value_for(:#{attribute})
+      end
+
+      def #{attribute}_adjustment
+        adjustment_for(:#{attribute})
+      end
+    class_eval
+  end
+
+  def racial_modifier_for(attribute)
+    self.race.send("#{attribute}_modifier")
+  end
+
+  def final_value_for(attribute)
+    send(attribute) + racial_modifier_for(attribute)
+  end
+
+  def adjustment_for(attribute)
+    Rules::AttributeAdjustment.adjustment_for(final_value_for(attribute))
+  end
 end

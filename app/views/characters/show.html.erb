@@ -9,11 +9,66 @@
 <div id="character-sheet">
   <h1><%=h @character.name -%></h1>
 
-<h3>Dados Básicos <%= toggler_for 'basic-data', 'basic-data-toggler' -%></h3>
-  <div id="basic-data">
-    <span class="age"><%= displayable_age_for(@character) -%></span>
-    <span class="level"><%= displayable_level_for(@character) -%></span>
-    <span class="socialClass"><%= displayable_social_class_for(@character) -%></span>
-    <span class="god"><%= displayable_god_for(@character) -%></span>
+  <div class="section">
+    <h3>Dados Básicos <%= toggler_for 'basic-data', 'basic-data-toggler' -%></h3>
+    <div id="basic-data" class="box">
+      <span class="age"><%= displayable_age_for(@character) -%></span>
+      <span class="level"><%= displayable_level_for(@character) -%></span>
+      <span class="socialClass"><%= displayable_social_class_for(@character) -%></span>
+      <span class="god"><%= displayable_god_for(@character) -%></span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Atributos <%= toggler_for 'attributes', 'attributes-toggler' -%></h3>
+    <div id="attributes" class="box">
+      <table>
+        <tr class="topRow">
+          <th class="emptyCell"></th>
+          <th>Intelecto</th>
+          <th>Aura</th>
+          <th>Carisma</th>
+          <th>Força</th>
+          <th>Físico</th>
+          <th>Agilidade</th>
+        </tr>
+        <tr class="oddRow">
+          <th>Iniciais</th>
+          <td><%= @character.intelect -%></td>
+          <td><%= @character.aura -%></td>
+          <td><%= @character.charisma -%></td>
+          <td><%= @character.strengh -%></td>
+          <td><%= @character.physical -%></td>
+          <td><%= @character.agility -%></td>
+        </tr>
+        <tr class="evenRow">
+          <th>Mod.</th>
+          <td><%= @character.intelect_modifier -%></td>
+          <td><%= @character.aura_modifier -%></td>
+          <td><%= @character.charisma_modifier -%></td>
+          <td><%= @character.strengh_modifier -%></td>
+          <td><%= @character.physical_modifier -%></td>
+          <td><%= @character.agility_modifier -%></td>
+        </tr>
+        <tr class="oddRow">
+          <th>Finais</th>
+          <td><%= @character.final_value_for_intelect -%></td>
+          <td><%= @character.final_value_for_aura -%></td>
+          <td><%= @character.final_value_for_charisma -%></td>
+          <td><%= @character.final_value_for_strengh -%></td>
+          <td><%= @character.final_value_for_physical -%></td>
+          <td><%= @character.final_value_for_agility -%></td>
+        </tr>
+        <tr class="evenRow">
+          <th>Ajuste</th>
+          <td><%=signed @character.intelect_adjustment -%></td>
+          <td><%=signed @character.aura_adjustment -%></td>
+          <td><%=signed @character.charisma_adjustment -%></td>
+          <td><%=signed @character.strengh_adjustment -%></td>
+          <td><%=signed @character.physical_adjustment -%></td>
+          <td><%=signed @character.agility_adjustment -%></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>
