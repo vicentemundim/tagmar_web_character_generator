@@ -32,7 +32,7 @@ module CharactersHelper
   end
 
   def displayable_god_for(character)
-    character.god.titleize unless character.god.blank?
+    character.god.blank? ? "Ateu" : "Devoto de #{character.god.titleize}"
   end
 
   def signed(value)
