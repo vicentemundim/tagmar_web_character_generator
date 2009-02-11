@@ -16,11 +16,10 @@ module ApplicationHelper
   end
 
   def toggler_for(target_id, toggler_id, start_hidden = false)
-    toggle_text = "$('#{target_id}').visible() ? $('#{toggler_id}').innerHTML = '[esconder]' : $('#{toggler_id}').innerHTML = '[exibir]'"
     if start_hidden
-      link_to_function '[exibir]', "$('#{target_id}').toggle(); #{toggle_text}", :id => toggler_id
+      link_to_function '[exibir]', "toggleWithEffect('#{target_id}', '#{toggler_id}');", :id => toggler_id
     else
-      link_to_function '[esconder]', "$('#{target_id}').toggle(); #{toggle_text}", :id => toggler_id
+      link_to_function '[esconder]', "toggleWithEffect('#{target_id}', '#{toggler_id}');", :id => toggler_id
     end
   end
 end
