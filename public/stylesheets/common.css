@@ -1,10 +1,46 @@
 .box {
-  -moz-border-radius-bottomleft: 12px;
-	-moz-border-radius-bottomright: 12px;
-	-moz-border-radius-topleft: 12px;
-	-moz-border-radius-topright: 12px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   border: 1px solid #324001;
   background-color: #E2F0D6;
   margin: 3px 10px;
   padding: 5px 10px;
+}
+
+.box table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.box table tr td {
+  border-top: 1px dotted black;
+  border-left: 1px dotted black;
+  text-align: center;
+  padding: 2px;
+  width: 20px;
+}
+
+.box table tr th {
+  border-right: 1px solid black;
+  border-top: 1px dotted black;
+  padding: 2px;
+}
+
+.box table tr.topRow th {
+  border-top: 0px;
+  border-left: 1px dotted black;
+  border-bottom: 1px solid black;
+  border-right: 0px;
+}
+
+.box table tr.oddRow {
+  background-color: #eaf3e3;
+}
+
+.box table tr th.emptyCell {
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }

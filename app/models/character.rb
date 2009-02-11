@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090208154552
+# Schema version: 20090211231638
 #
 # Table name: characters
 #
@@ -33,6 +33,7 @@
 #  current_gold_coins        :integer(4)
 #  height                    :integer(4)
 #  weight                    :integer(4)
+#  current_heroic_energy     :integer(4)
 #
 
 class Character < ActiveRecord::Base
@@ -66,5 +67,18 @@ class Character < ActiveRecord::Base
 
   def adjustment_for(attribute)
     Rules::AttributeAdjustment.adjustment_for(final_value_for(attribute))
+  end
+
+  def calculated_physical_energy_with_armor
+    calculated_physical_energy + armor_absorption
+  end
+
+  def calculated_physical_energy
+    Rules::PhysicalEnergy.physical_energy_for(self.weight, self.strength, self.physical)
+  end
+
+  def armor_absorption
+    # TODO: implement this
+    0
   end
 end

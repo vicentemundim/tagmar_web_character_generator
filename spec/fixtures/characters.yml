@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090208154552
+# Schema version: 20090211231638
 #
 # Table name: characters
 #
@@ -33,6 +33,7 @@
 #  current_gold_coins        :integer(4)
 #  height                    :integer(4)
 #  weight                    :integer(4)
+#  current_heroic_energy     :integer(4)
 #
 
 ugolf:
@@ -55,8 +56,9 @@ ugolf:
   physical: 20
   agility: 19
   current_experience: 0
-  physical_energy: 17
+  physical_energy: 12
   heroic_energy: 15
+  current_heroic_energy: 15
   combat_accumulated_points: 0
   magic_accumulated_points: 0
   skill_accumulated_points: 0
@@ -87,6 +89,7 @@ faram:
   current_experience: 0
   physical_energy: 6
   heroic_energy: 14
+  current_heroic_energy: 10
   combat_accumulated_points: 0
   magic_accumulated_points: 0
   skill_accumulated_points: 0

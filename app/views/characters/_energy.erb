@@ -1,0 +1,25 @@
+<div class="section sectionInNewLine">
+  <h3>Energia <%= toggler_for 'energy', 'energy-toggler' -%></h3>
+  <div id="energy" class="box">
+    <table>
+      <tr class="topRow">
+        <th class="emptyCell"></th>
+        <th>Sem Armadura</th>
+        <th>Com Armadura</th>
+        <th>Atual</th>
+      </tr>
+      <tr class="oddRow">
+        <th>Física</th>
+        <td><%= @character.calculated_physical_energy -%></td>
+        <td><%= @character.calculated_physical_energy_with_armor -%></td>
+        <td><%= @character.physical_energy -%></td>
+      </tr>
+      <tr class="evenRow">
+        <th>Heróica</th>
+        <td><%= @character.heroic_energy -%></td>
+        <td><%= @character.heroic_energy -%></td>
+        <td><%= @character.current_heroic_energy -%></td>
+      </tr>
+    </table>
+  </div>
+</div>
