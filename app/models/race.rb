@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090206011240
+# Schema version: 20090208154552
 #
 # Table name: races
 #
@@ -9,7 +9,7 @@
 #  intelect_modifier :integer(4)
 #  aura_modifier     :integer(4)
 #  charisma_modifier :integer(4)
-#  strengh_modifier  :integer(4)
+#  strength_modifier :integer(4)
 #  physical_modifier :integer(4)
 #  agility_modifier  :integer(4)
 #  created_at        :datetime

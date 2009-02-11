@@ -1,9 +1,9 @@
 class Rules::PhysicalEnergy
   class << self
-    def physical_energy_for(weight, strenght, physical)
-      strenght_physical_sum = strenght + physical
+    def physical_energy_for(weight, strength, physical)
+      strength_physical_sum = strength + physical
       weight_range = WEIGHT_RANGES.select { |range| range.include?(weight) }.first
-      strength_plus_physical_range = STRENGH_PLUS_PHYSICAL_RANGES.select { |range| range.include?(strenght_physical_sum) }.first
+      strength_plus_physical_range = STRENGTH_PLUS_PHYSICAL_RANGES.select { |range| range.include?(strength_physical_sum) }.first
       real_mapping[weight_range][strength_plus_physical_range]
     end
 
@@ -12,7 +12,7 @@ class Rules::PhysicalEnergy
       WEIGHT_RANGES.each do |weight_range|
         @@real_mapping[weight_range] ||= {}
         nil_values_counter = 0
-        STRENGH_PLUS_PHYSICAL_RANGES.each_with_index do |strength_plus_physical_range, index|
+        STRENGTH_PLUS_PHYSICAL_RANGES.each_with_index do |strength_plus_physical_range, index|
           mapped_value = MAPPING[weight_range]
           unless strength_plus_physical_range.min < mapped_value[:min].min
             @@real_mapping[weight_range][strength_plus_physical_range] = mapped_value[:initial_value] + index - nil_values_counter
@@ -45,7 +45,7 @@ class Rules::PhysicalEnergy
     110..130,
   ]
 
-  STRENGH_PLUS_PHYSICAL_RANGES = [
+  STRENGTH_PLUS_PHYSICAL_RANGES = [
     4..5,
     6..8,
     9..11,

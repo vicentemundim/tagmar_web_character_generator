@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090206224801
+# Schema version: 20090208154552
 #
 # Table name: belongings
 #
@@ -8,7 +8,7 @@
 #  identifier        :string(255)
 #  name              :string(255)
 #  description       :text
-#  minimum_strengh   :integer(4)
+#  minimum_strength  :integer(4)
 #  minimum_height    :integer(4)
 #  first_column      :integer(4)
 #  nineth_column     :integer(4)
@@ -30,7 +30,7 @@ knife:
   identifier: knife
   name: Faca
   description: 
-  minimum_strengh: 2
+  minimum_strength: 2
   minimum_height: 97
   first_column: 1
   nineth_column: -3
@@ -43,7 +43,7 @@ dagger:
   identifier: dagger
   name: Punhal
   description:
-  minimum_strengh: 3
+  minimum_strength: 3
   minimum_height: 97
   first_column: 1
   nineth_column: -2

@@ -6,7 +6,7 @@ class CreateRaces < ActiveRecord::Migration
       t.integer :intelect_modifier
       t.integer :aura_modifier
       t.integer :charisma_modifier
-      t.integer :strengh_modifier
+      t.integer :strength_modifier
       t.integer :physical_modifier
       t.integer :agility_modifier
 

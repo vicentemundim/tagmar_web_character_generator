@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090206011240
+# Schema version: 20090208154552
 #
 # Table name: races
 #
@@ -9,7 +9,7 @@
 #  intelect_modifier :integer(4)
 #  aura_modifier     :integer(4)
 #  charisma_modifier :integer(4)
-#  strengh_modifier  :integer(4)
+#  strength_modifier :integer(4)
 #  physical_modifier :integer(4)
 #  agility_modifier  :integer(4)
 #  created_at        :datetime
@@ -27,7 +27,7 @@ human:
   intelect_modifier: 0
   aura_modifier: 0
   charisma_modifier: 0
-  strengh_modifier: 0
+  strength_modifier: 0
   physical_modifier: 0
   agility_modifier: 0
 
@@ -39,7 +39,7 @@ halfling:
   intelect_modifier: 0
   aura_modifier: 0
   charisma_modifier: 0
-  strengh_modifier: -2
+  strength_modifier: -2
   physical_modifier: -1
   agility_modifier: 2
 
@@ -51,7 +51,7 @@ dwarf:
   intelect_modifier: 0
   aura_modifier: 0
   charisma_modifier: -1
-  strengh_modifier: 1
+  strength_modifier: 1
   physical_modifier: 2
   agility_modifier: 0
 
@@ -63,7 +63,7 @@ wood_elf:
   intelect_modifier: 1
   aura_modifier: 0
   charisma_modifier: 1
-  strengh_modifier: 0
+  strength_modifier: 0
   physical_modifier: -1
   agility_modifier: 1
 
@@ -75,7 +75,7 @@ golden_elf:
   intelect_modifier: 2
   aura_modifier: 1
   charisma_modifier: 1
-  strengh_modifier: -1
+  strength_modifier: -1
   physical_modifier: -2
   agility_modifier: 1
 
@@ -87,6 +87,6 @@ half_elf:
   intelect_modifier: 0
   aura_modifier: 0
   charisma_modifier: 1
-  strengh_modifier: 0
+  strength_modifier: 0
   physical_modifier: 0
   agility_modifier: 0

@@ -18,7 +18,7 @@
 #  intelect                  :integer(4)
 #  aura                      :integer(4)
 #  charisma                  :integer(4)
-#  strengh                   :integer(4)
+#  strength                  :integer(4)
 #  physical                  :integer(4)
 #  agility                   :integer(4)
 #  current_experience        :integer(4)
@@ -51,7 +51,7 @@ ugolf:
   intelect: 17
   aura: 16
   charisma: 13
-  strengh: 18
+  strength: 18
   physical: 20
   agility: 19
   current_experience: 0
@@ -63,4 +63,34 @@ ugolf:
   focus: Cordão de Maira
   current_bronze_coins: 15
   current_silver_coins: 0
+  current_gold_coins: 0
+
+faram:
+  id: 2
+  user_id: 1
+  name: Faram Othus
+  biography: Faram é uma praga para a sociedade, já foi preso 2 vezes por roubar galinhas, mas conseguiu escapar da prisão e agora está em busca de tesouros.
+  age: 23
+  level: 1
+  race_id: 2
+  profession_id: 2
+  god: crezir
+  social_class: small_trader
+  height: 96
+  weight: 17
+  intelect: 20
+  aura: 6
+  charisma: 8
+  strength: 13
+  physical: 15
+  agility: 20
+  current_experience: 0
+  physical_energy: 6
+  heroic_energy: 14
+  combat_accumulated_points: 0
+  magic_accumulated_points: 0
+  skill_accumulated_points: 0
+  focus:
+  current_bronze_coins: 22
+  current_silver_coins: 2
   current_gold_coins: 0

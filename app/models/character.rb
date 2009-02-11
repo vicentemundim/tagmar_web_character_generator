@@ -18,7 +18,7 @@
 #  intelect                  :integer(4)
 #  aura                      :integer(4)
 #  charisma                  :integer(4)
-#  strengh                   :integer(4)
+#  strength                  :integer(4)
 #  physical                  :integer(4)
 #  agility                   :integer(4)
 #  current_experience        :integer(4)
@@ -40,7 +40,7 @@ class Character < ActiveRecord::Base
   belongs_to :race
   belongs_to :profession
 
-  %w(intelect aura charisma strengh physical agility).each do |attribute|
+  %w(intelect aura charisma strength physical agility).each do |attribute|
     class_eval <<-class_eval
       def #{attribute}_modifier
         racial_modifier_for(:#{attribute})

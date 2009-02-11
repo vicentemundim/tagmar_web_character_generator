@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090206224801
+# Schema version: 20090208154552
 #
 # Table name: belongings
 #
@@ -8,7 +8,7 @@
 #  identifier        :string(255)
 #  name              :string(255)
 #  description       :text
-#  minimum_strengh   :integer(4)
+#  minimum_strength  :integer(4)
 #  minimum_height    :integer(4)
 #  first_column      :integer(4)
 #  nineth_column     :integer(4)

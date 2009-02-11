@@ -8,7 +8,7 @@ describe Race do
       :intelect_modifier => 1,
       :aura_modifier => 1,
       :charisma_modifier => 1,
-      :strengh_modifier => 1,
+      :strength_modifier => 1,
       :physical_modifier => 1,
       :agility_modifier => 1
     }

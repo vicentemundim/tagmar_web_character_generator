@@ -5,7 +5,7 @@ class CreateBelongings < ActiveRecord::Migration
       t.string :identifier
       t.string :name
       t.text :description
-      t.integer :minimum_strengh
+      t.integer :minimum_strength
       t.integer :minimum_height
       t.integer :first_column
       t.integer :nineth_column
