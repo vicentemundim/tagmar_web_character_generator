@@ -13,7 +13,7 @@
 
 .characterListingBox {
   float: left;
-  margin: 0px 10px;
+  margin: 10px;
   padding: 5px;
   width: 150px;
   background-color: #E2F0D6;
@@ -42,11 +42,12 @@
 .section {
   float: left;
   display: inline;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .sectionInNewLine {
   clear: left;
-  margin-top: 20px;
 }
 
 #character-sheet {

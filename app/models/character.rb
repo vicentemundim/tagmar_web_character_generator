@@ -81,4 +81,12 @@ class Character < ActiveRecord::Base
     # TODO: implement this
     0
   end
+
+  def physical_resistance
+    self.level + physical_adjustment
+  end
+
+  def magical_resistance
+    self.level + aura_adjustment
+  end
 end

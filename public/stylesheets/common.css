@@ -44,3 +44,27 @@
   border-bottom: 1px solid black;
   border-right: 1px solid black;
 }
+
+.field {
+  border-bottom: 1px dotted black;
+  margin: 4px 0px;
+  padding: 2px 4px;
+}
+
+.lastField {
+  border-bottom: 0px;
+}
+
+.field label {
+  font-weight: bold;
+  float: left;
+  width: 45%;
+  padding-right: 5px;
+}
+
+.field span {
+}
+
+.clear {
+  clear: both;
+}

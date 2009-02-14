@@ -1,0 +1,7 @@
+<div class="section">
+  <h3>Resistências <%= toggler_for 'resistance', 'resistance-toggler' -%></h3>
+  <div id="resistance" class="box">
+    <%= render_field_for 'Física:', @character.physical_resistance -%>
+    <%= render_last_field_for 'À Magia:', @character.magical_resistance -%>
+  </div>
+</div>

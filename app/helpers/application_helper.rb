@@ -22,4 +22,19 @@ module ApplicationHelper
       link_to_function '[esconder]', "toggleWithEffect('#{target_id}', '#{toggler_id}');", :id => toggler_id
     end
   end
+
+  def render_field_for(label, value, options = {})
+    options.reverse_merge!({ :class => 'field' })
+
+    content_tag(:div, :class => options[:class]) do
+      content = content_tag(:label, label)
+      content += content_tag(:span, value)
+      content += content_tag(:div, nil, :class => 'clear')
+    end
+  end
+
+  def render_last_field_for(label, value, options = {})
+    options.reverse_merge!({ :class => 'field lastField' })
+    render_field_for(label, value, options)
+  end
 end
