@@ -89,4 +89,8 @@ class Character < ActiveRecord::Base
   def magical_resistance
     self.level + aura_adjustment
   end
+
+  def next_level_experience
+    Rules::Experience::next_level_points_for(self.level)
+  end
 end

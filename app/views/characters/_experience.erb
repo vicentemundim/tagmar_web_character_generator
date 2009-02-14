@@ -1,0 +1,7 @@
+<div class="section">
+  <h3>Experiência <%= toggler_for 'experience', 'experience-toggler' -%></h3>
+  <div id="experience" class="box">
+    <%= render_field_for 'Atual:', @character.current_experience -%>
+    <%= render_last_field_for 'Próximo:', @character.next_level_experience -%>
+  </div>
+</div>
