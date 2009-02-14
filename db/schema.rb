@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090211231638) do
+ActiveRecord::Schema.define(:version => 20090214163400) do
+
+  create_table "acquired_weapon_groups", :force => true do |t|
+    t.integer  "character_id"
+    t.string   "weapon_group"
+    t.integer  "level"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "belongings", :force => true do |t|
     t.string   "type"
@@ -29,6 +37,12 @@ ActiveRecord::Schema.define(:version => 20090211231638) do
     t.string   "special_effect"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "weapon_group"
+  end
+
+  create_table "belongings_characters", :id => false, :force => true do |t|
+    t.integer "belonging_id"
+    t.integer "character_id"
   end
 
   create_table "characters", :force => true do |t|

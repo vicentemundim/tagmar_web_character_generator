@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090208154552
+# Schema version: 20090214160437
 #
 # Table name: belongings
 #
@@ -21,6 +21,7 @@
 #  special_effect    :string(255)
 #  created_at        :datetime
 #  updated_at        :datetime
+#  weapon_group      :string(255)
 #
 
 class Belonging < ActiveRecord::Base

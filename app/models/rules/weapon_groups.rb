@@ -9,6 +9,19 @@ class Rules::WeaponGroups
     end
   end
 
+  WEAPON_GROUPS = [
+    'Cl',
+    'El',
+    'CmM',
+    'CmE',
+    'Em',
+    'PmL',
+    'PmA',
+    'Cp',
+    'Ep',
+    'Pp',
+  ]
+
   COSTS = {
     'Cl'  => 1,
     'El'  => 1,

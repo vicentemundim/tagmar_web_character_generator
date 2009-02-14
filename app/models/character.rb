@@ -40,6 +40,13 @@ class Character < ActiveRecord::Base
   belongs_to :user
   belongs_to :race
   belongs_to :profession
+  has_and_belongs_to_many :belongings
+  has_and_belongs_to_many :weapons, :join_table => 'belongings_characters', :association_foreign_key => 'belonging_id'
+  has_and_belongs_to_many :armors, :join_table => 'belongings_characters', :association_foreign_key => 'belonging_id'
+  has_and_belongs_to_many :elms, :join_table => 'belongings_characters', :association_foreign_key => 'belonging_id'
+  has_and_belongs_to_many :shields, :join_table => 'belongings_characters', :association_foreign_key => 'belonging_id'
+  has_and_belongs_to_many :other_belongings, :join_table => 'belongings_characters', :association_foreign_key => 'belonging_id'
+  has_many :acquired_weapon_groups
 
   %w(intelect aura charisma strength physical agility).each do |attribute|
     class_eval <<-class_eval
@@ -92,5 +99,18 @@ class Character < ActiveRecord::Base
 
   def next_level_experience
     Rules::Experience::next_level_points_for(self.level)
+  end
+
+  def acquired_weapon_group_level_for(weapon_group)
+    acquired_weapon_group = self.acquired_weapon_groups.find_by_weapon_group(weapon_group)
+    acquired_weapon_group.nil? ? 0 : acquired_weapon_group.level
+  end
+
+  def total_adjusment_for(weapon)
+    acquired_weapon_group_level_for(weapon.weapon_group) + self.agility_adjustment
+  end
+
+  def damage_for(weapon, amount = 100)
+    (weapon.base_damage * amount/100).to_i + self.strength_adjustment
   end
 end

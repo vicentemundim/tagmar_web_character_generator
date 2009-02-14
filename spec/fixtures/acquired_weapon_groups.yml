@@ -1,0 +1,39 @@
+# == Schema Information
+# Schema version: 20090214155938
+#
+# Table name: acquired_weapon_groups
+#
+#  id           :integer(4)      not null, primary key
+#  character_id :integer(4)
+#  weapon_group :string(255)
+#  level        :integer(4)
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+ugolf_cl:
+  character_id: 1
+  weapon_group: Cl
+  level: 1
+
+ugolf_cme:
+  character_id: 1
+  weapon_group: CmE
+  level: 1
+
+ugolf_pma:
+  character_id: 1
+  weapon_group: PmA
+  level: 1
+
+faram_cl:
+  character_id: 2
+  weapon_group: Cl
+  level: 1
+
+faram_pma:
+  character_id: 2
+  weapon_group: PmA
+  level: 1

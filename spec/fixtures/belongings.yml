@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20090208154552
+# Schema version: 20090214160437
 #
 # Table name: belongings
 #
@@ -21,28 +21,36 @@
 #  special_effect    :string(255)
 #  created_at        :datetime
 #  updated_at        :datetime
+#  weapon_group      :string(255)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
+############ WEAPONS #############
+
 knife:
+  id: 1
   type: Weapon
   identifier: knife
   name: Faca
-  description: 
+  description:
+  weapon_group: Cl
   minimum_strength: 2
   minimum_height: 97
   first_column: 1
   nineth_column: -3
   sixteenth_column: -6
   base_damage: 8
+  range: 1;
   bronze_coins_cost: 20
 
 dagger:
+  id: 2
   type: Weapon
   identifier: dagger
   name: Punhal
   description:
+  weapon_group: Cl
   minimum_strength: 3
   minimum_height: 97
   first_column: 1
@@ -52,7 +60,314 @@ dagger:
   range: 20
   bronze_coins_cost: 50
 
+staff:
+  id: 3
+  type: Weapon
+  identifier: staff
+  name: Cajado
+  description:
+  weapon_group: El
+  minimum_strength: 4
+  minimum_height: 97
+  first_column: 1
+  nineth_column: -2
+  sixteenth_column: -4
+  base_damage: 12
+  range: 1
+  bronze_coins_cost: 5
+
+club:
+  id: 4
+  type: Weapon
+  identifier: club
+  name: Porrete
+  description:
+  weapon_group: El
+  minimum_strength: 5
+  minimum_height: 97
+  first_column: 2
+  nineth_column: -1
+  sixteenth_column: -5
+  base_damage: 12
+  range: 1
+  bronze_coins_cost: 0
+
+axe:
+  id: 5
+  type: Weapon
+  identifier: axe
+  name: Machado
+  description:
+  weapon_group: CmM
+  minimum_strength: 8
+  minimum_height: 97
+  first_column: 2
+  nineth_column: -1
+  sixteenth_column: -4
+  base_damage: 16
+  range: 25
+  bronze_coins_cost: 100
+
+war_axe:
+  id: 6
+  type: Weapon
+  identifier: war_axe
+  name: Machado de guerra
+  description:
+  weapon_group: CmM
+  minimum_strength: 11
+  minimum_height: 135
+  first_column: 1
+  nineth_column: 3
+  sixteenth_column: 1
+  base_damage: 20
+  range: 1
+  bronze_coins_cost: 200
+
+small_sword:
+  id: 7
+  type: Weapon
+  identifier: small_sword
+  name: Gládio
+  description:
+  weapon_group: CmE
+  minimum_strength: 5
+  minimum_height: 97
+  first_column: 3
+  nineth_column: 0
+  sixteenth_column: -4
+  base_damage: 16
+  range: 1
+  bronze_coins_cost: 120
+
+sword:
+  id: 8
+  type: Weapon
+  identifier: sword
+  name: Espada
+  description:
+  weapon_group: CmE
+  minimum_strength: 8
+  minimum_height: 97
+  first_column: 3
+  nineth_column: 0
+  sixteenth_column: -3
+  base_damage: 20
+  range: 1
+  bronze_coins_cost: 200
+
+clay:
+  id: 9
+  type: Weapon
+  identifier: clay
+  name: Clava
+  description:
+  weapon_group: Em
+  minimum_strength: 8
+  minimum_height: 97
+  first_column: 2
+  nineth_column: -1
+  sixteenth_column: -5
+  base_damage: 16
+  range: 1
+  bronze_coins_cost: 15
+
+mace:
+  id: 10
+  type: Weapon
+  identifier: mace
+  name: Maça
+  description:
+  weapon_group: Em
+  minimum_strength: 9
+  minimum_height: 97
+  first_column: 0
+  nineth_column: 1
+  sixteenth_column: -2
+  base_damage: 20
+  range: 1
+  bronze_coins_cost: 150
+
+war_hammer:
+  id: 11
+  type: Weapon
+  identifier: war_hammer
+  name: Martelo de Guerra
+  description:
+  weapon_group: Em
+  minimum_strength: 8
+  minimum_height: 97
+  first_column: 0
+  nineth_column: 1
+  sixteenth_column: -1
+  base_damage: 16
+  range: 20
+  bronze_coins_cost: 110
+
+light_spear:
+  id: 12
+  type: Weapon
+  identifier: light_spear
+  name: Lança Level
+  description:
+  weapon_group: PmL
+  minimum_strength: 7
+  minimum_height: 97
+  first_column: 2
+  nineth_column: -1
+  sixteenth_column: -3
+  base_damage: 16
+  range: 40
+  bronze_coins_cost: 10
+
+heavy_spear:
+  id: 13
+  type: Weapon
+  identifier: heavy_spear
+  name: Lança Pesada
+  description:
+  weapon_group: PmL
+  minimum_strength: 10
+  minimum_height: 97
+  first_column: 1
+  nineth_column: -1
+  sixteenth_column: -3
+  base_damage: 20
+  range: 1
+  bronze_coins_cost: 80
+
+bow:
+  id: 14
+  type: Weapon
+  identifier: bow
+  name: Arco Simples
+  description:
+  weapon_group: PmA
+  minimum_strength: 6
+  minimum_height: 97
+  first_column: 4
+  nineth_column: 1
+  sixteenth_column: -2
+  base_damage: 16
+  range: 120
+  bronze_coins_cost: 100
+
+heavy_bow:
+  id: 15
+  type: Weapon
+  identifier: heavy bow
+  name: Arco Composto
+  description:
+  weapon_group: PmA
+  minimum_strength: 9
+  minimum_height: 155
+  first_column: 4
+  nineth_column: 1
+  sixteenth_column: -2
+  base_damage: 20
+  range: 200
+  bronze_coins_cost: 200
+
+one_handed_sword:
+  id: 16
+  type: Weapon
+  identifier: one_handed_sword
+  name: Espada de mão e meia (uma mão)
+  description:
+  weapon_group: Cp
+  minimum_strength: 13
+  minimum_height: 135
+  first_column: 2
+  nineth_column: 1
+  sixteenth_column: -1
+  base_damage: 20
+  range: 1
+  bronze_coins_cost: 300
+
+two_handed_sword:
+  id: 17
+  type: Weapon
+  identifier: two_handed_sword
+  name: Espada de mão e meia (duas mãos)
+  description:
+  weapon_group: Cp
+  minimum_strength: 13
+  minimum_height: 135
+  first_column: 0
+  nineth_column: 0
+  sixteenth_column: 1
+  base_damage: 20
+  range: 1
+  bronze_coins_cost: 300
+
+greatsword:
+  id: 18
+  type: Weapon
+  identifier: greatsword
+  name: Montante
+  description:
+  weapon_group: Cp
+  minimum_strength: 13
+  minimum_height: 155
+  first_column: 0
+  nineth_column: 2
+  sixteenth_column: 5
+  base_damage: 24
+  range: 1
+  bronze_coins_cost: 500
+
+heavy_mace:
+  id: 19
+  type: Weapon
+  identifier: heavy_mace
+  name: Maça de Armas
+  description:
+  weapon_group: Ep
+  minimum_strength: 13
+  minimum_height: 97
+  first_column: 1
+  nineth_column: 2
+  sixteenth_column: 0
+  base_damage: 20
+  range: 1
+  bronze_coins_cost: 200
+
+flail:
+  id: 20
+  type: Weapon
+  identifier: flail
+  name: Mangual
+  description:
+  weapon_group: Ep
+  minimum_strength: 116
+  minimum_height: 155
+  first_column: -2
+  nineth_column: 1
+  sixteenth_column: 4
+  base_damage: 24
+  range: 1
+  bronze_coins_cost: 300
+
+cavalry_spear:
+  id: 21
+  type: Weapon
+  identifier: cavalry_spear
+  name: Lança de Cavalaria
+  description:
+  weapon_group: Pp
+  minimum_strength: 15
+  minimum_height: 155
+  first_column: -1
+  nineth_column: 1
+  sixteenth_column: 4
+  base_damage: 24
+  range: 1
+  bronze_coins_cost: 500
+
+############ ARMORS #############
+
 light_leather:
+  id: 22
   type: Armor
   identifier: light_leather
   name: Couro Level
@@ -60,7 +375,10 @@ light_leather:
   absorption: 3
   bronze_coins_cost: 20
 
+############ ELMS #############
+
 open_elm:
+  id: 23
   type: Elm
   identifier: open_elm
   name: Elmo Aberto
@@ -69,6 +387,7 @@ open_elm:
   bronze_coins_cost: 20
 
 closed_elm:
+  id: 24
   type: Elm
   identifier: closed_elm
   name: Elmo Fechado
@@ -76,7 +395,10 @@ closed_elm:
   absorption: 2
   bronze_coins_cost: 50
 
+############ SHIELDS #############
+
 small_shield:
+  id: 25
   type: Shield
   identifier: small_shield
   name: Escudo Pequeno
@@ -86,6 +408,7 @@ small_shield:
   defense_increase: 1
 
 big_shield:
+  id: 26
   type: Shield
   identifier: big_shield
   name: Escudo Grande
@@ -94,7 +417,10 @@ big_shield:
   bronze_coins_cost: 150
   defense_increase: 1
 
+############ MISC ITEMS #############
+
 odre:
+  id: 27
   type: OtherBelonging
   identifier: odre
   name: Odre
@@ -102,6 +428,7 @@ odre:
   bronze_coins_cost: 2
 
 small_bag:
+  id: 28
   type: OtherBelonging
   identifier: small_bag
   name: Saco pequeno
@@ -109,6 +436,7 @@ small_bag:
   bronze_coins_cost: 2
 
 boots:
+  id: 29
   type: OtherBelonging
   identifier: boots
   name: Par de botas
@@ -116,6 +444,7 @@ boots:
   bronze_coins_cost: 6
 
 belt:
+  id: 30
   type: OtherBelonging
   identifier: belt
   name: Cinto
@@ -123,6 +452,7 @@ belt:
   bronze_coins_cost: 2
 
 common_wearing:
+  id: 31
   type: OtherBelonging
   identifier: common_wearing
   name: Roupa comum

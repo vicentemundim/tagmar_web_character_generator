@@ -1,0 +1,15 @@
+ugolf_dagger:
+  character_id: 1
+  belonging_id: 2
+
+ugolf_sword:
+  character_id: 1
+  belonging_id: 8
+
+faram_dagger:
+  character_id: 2
+  belonging_id: 2
+
+faram_bow:
+  character_id: 2
+  belonging_id: 14

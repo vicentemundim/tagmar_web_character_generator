@@ -1,0 +1,17 @@
+<div class="section sectionInNewLine">
+  <h3>Grupos de Armas <%= toggler_for 'weapon-groups', 'weapon-groups-toggler' -%></h3>
+  <div id="weapon-groups" class="box">
+    <table>
+      <tr class="topRow">
+        <% Rules::WeaponGroups::WEAPON_GROUPS.each_with_index do |weapon_group, index| -%>
+          <%= content_tag :th, weapon_group, { :title => Rules::WeaponGroups::DESCRIPTIONS[weapon_group], :class => ((index == 0) ? 'noBorderLeft' : '') } -%>
+        <% end -%>
+      </tr>
+      <tr>
+        <% Rules::WeaponGroups::WEAPON_GROUPS.each_with_index do |weapon_group, index| -%>
+          <%= content_tag :td, @character.acquired_weapon_group_level_for(weapon_group), :class => ((index == 0) ? 'noBorderLeft' : '') -%>
+        <% end -%>
+      </tr>
+    </table>
+  </div>
+</div>
