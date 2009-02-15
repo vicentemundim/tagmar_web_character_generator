@@ -14,162 +14,189 @@
 #
 
 stealth_action:
+  id: 1
   identifier: stealth_action
   name: Ações Furtivas
   base_attribute: agility
   cost: 2
 
 surprise_attack:
+  id: 2
   identifier: surprise_attack
   name: Ataque Surpresa
   base_attribute: 
   cost: 1
 
 releasing_locks:
+  id: 3
   identifier: releasing_locks
   name: Destravar Fechaduras
   base_attribute: agility
   cost: 1
 
 disguises:
+  id: 4
   identifier: disguises
   name: Disfarces
   base_attribute: intelect
   cost: 1
 
 stealing:
+  id: 5
   identifier: stealing
   name: Furtar Objetos
   base_attribute: agility
   cost: 1
 
 handling_traps:
+  id: 6
   identifier: handling_traps
   name: Manusear Armadilhas
   base_attribute: intelect
   cost: 2
 
 acrobatics:
+  id: 7
   identifier: acrobatics
   name: Acrobacias
   base_attribute: agility
   cost: 2
 
 climbing:
+  id: 8
   identifier: climbing
   name: Escalar Superfícies
   base_attribute: agility
   cost: 2
 
 dodge:
+  id: 9
   identifier: dodge
   name: Esquiva
   base_attribute: agility
   cost: 1
 
 ride_animals:
+  id: 10
   identifier: ride_animals
   name: Montar Animais
   base_attribute: agility
   cost: 1
 
 swimming:
+  id: 11
   identifier: swimming
   name: Natação
   base_attribute: physical
   cost: 1
 
 singing:
+  id: 12
   identifier: singing
   name: Canto
   base_attribute: charisma
   cost: 1
 
 trading:
+  id: 13
   identifier: trading
   name: Comércio
   base_attribute: charisma
   cost: 2
 
 dancing:
+  id: 14
   identifier: dancing
   name: Dança
   base_attribute: agility
   cost: 1
 
 leadership:
+  id: 15
   identifier: leadership
   name: Liderança
   base_attribute: charisma
   cost: 2
 
 music:
+  id: 16
   identifier: music
   name: Música Instrumental
   base_attribute: agility
   cost: 1
 
 persuasion:
+  id: 17
   identifier: persuasion
   name: Persuasão
   base_attribute: charisma
   cost: 2
 
 carpentry:
+  id: 18
   identifier: carpentry
   name: Carpintaria
   base_attribute: agility
   cost: 1
 
 medicine:
+  id: 19
   identifier: medicine
   name: Medicina
   base_attribute: intelect
   cost: 2
 
 navigation:
+  id: 20
   identifier: navigation
   name: Navegação
   base_attribute: intelect
   cost: 1
 
 metal_works:
+  id: 21
   identifier: metal_works
   name: Trabalho em Metal
   base_attribute:
   cost: 2
 
 handcraftsmanship:
+  id: 22
   identifier: handcraftsmanship
   name: Trabalhos Manuais
   base_attribute: agility
   cost: 1
 
 writing:
+  id: 23
   identifier: writing
   name: Escrita
   base_attribute: intelect
   cost: 3
 
 languages:
+  id: 24
   identifier: languages
   name: Línguas
   base_attribute: intelect
   cost: 3
 
 perception:
+  id: 25
   identifier: perception
   name: Percepção
   base_attribute: intelect
   cost: 2
 
 follow_paths:
+  id: 26
   identifier: follow_paths
   name: Seguir Trilhas
   base_attribute: intelect
   cost: 2
 
 training_animals:
+  id: 27
   identifier: training_animals
   name: Treinar Animais
   base_attribute: intelect

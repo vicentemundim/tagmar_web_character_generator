@@ -47,6 +47,7 @@ class Character < ActiveRecord::Base
   has_and_belongs_to_many :shields, :join_table => 'belongings_characters', :association_foreign_key => 'belonging_id'
   has_and_belongs_to_many :other_belongings, :join_table => 'belongings_characters', :association_foreign_key => 'belonging_id'
   has_many :acquired_weapon_groups
+  has_many :acquired_skills
 
   %w(intelect aura charisma strength physical agility).each do |attribute|
     class_eval <<-class_eval
@@ -73,6 +74,7 @@ class Character < ActiveRecord::Base
   end
 
   def adjustment_for(attribute)
+    return 0 if attribute.blank?
     Rules::AttributeAdjustment.adjustment_for(final_value_for(attribute))
   end
 
@@ -112,5 +114,9 @@ class Character < ActiveRecord::Base
 
   def damage_for(weapon, amount = 100)
     (weapon.base_damage * amount/100).to_i + self.strength_adjustment
+  end
+
+  def skill_total_for(acquired_skill)
+    adjustment_for(acquired_skill.skill.base_attribute) + acquired_skill.level
   end
 end

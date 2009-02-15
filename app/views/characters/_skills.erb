@@ -1,0 +1,23 @@
+<div class="section">
+  <h3>Habilidades <%= toggler_for 'skills', 'skills-toggler' -%></h3>
+  <div id="skills" class="box">
+    <table>
+      <tr class="topRow">
+        <th class="noBorderLeft" width="140">Nome</th>
+        <th width="80">Attributo</th>
+        <th width="30">Nível</th>
+        <th width="30">Ajuste</th>
+        <th width="30">Total</th>
+      </tr>
+      <%- @character.acquired_skills.each do |acquired_skill| -%>
+        <tr class="<%= cycle('oddRow', 'evenRow') -%>">
+          <td class="noBorderLeft" title="<%= acquired_skill.skill.description -%>"><%= acquired_skill.skill.name -%></td>
+          <td><%= displayable_attribute_name_for(acquired_skill.skill.base_attribute) || "-" -%></td>
+          <td><%= acquired_skill.level -%></td>
+          <td><%= @character.adjustment_for(acquired_skill.skill.base_attribute) -%></td>
+          <td><%= @character.skill_total_for(acquired_skill) -%></td>
+        </tr>
+      <%- end -%>
+    </table>
+  </div>
+</div>

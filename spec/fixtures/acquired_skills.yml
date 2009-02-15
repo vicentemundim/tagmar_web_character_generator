@@ -1,0 +1,131 @@
+# == Schema Information
+# Schema version: 20090215164103
+#
+# Table name: acquired_skills
+#
+#  id           :integer(4)      not null, primary key
+#  character_id :integer(4)
+#  skill_id     :integer(4)
+#  level        :integer(4)
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+ugolf_stealth_action:
+  character_id: 1
+  skill_id: 1
+  level: 1
+
+ugolf_surprise_attack:
+  character_id: 1
+  skill_id: 2
+  level: 1
+
+ugolf_acrobatics:
+  character_id: 1
+  skill_id: 7
+  level: 1
+
+ugolf_climbing:
+  character_id: 1
+  skill_id: 8
+  level: 1
+
+ugolf_dodge:
+  character_id: 1
+  skill_id: 9
+  level: 1
+
+ugolf_ride_animals:
+  character_id: 1
+  skill_id: 10
+  level: 1
+
+ugolf_swimming:
+  character_id: 1
+  skill_id: 11
+  level: 1
+
+ugolf_persuasion:
+  character_id: 1
+  skill_id: 17
+  level: 1
+
+ugolf_navigation:
+  character_id: 1
+  skill_id: 20
+  level: 1
+
+ugolf_perception:
+  character_id: 1
+  skill_id: 25
+  level: 1
+
+ugolf_follow_paths:
+  character_id: 1
+  skill_id: 26
+  level: 1
+
+ugolf_training_animals:
+  character_id: 1
+  skill_id: 27
+  level: 1
+
+
+
+faram_stealth_action:
+  character_id: 2
+  skill_id: 1
+  level: 1
+
+faram_surprise_attack:
+  character_id: 2
+  skill_id: 2
+  level: 1
+
+faram_releasing_locks:
+  character_id: 2
+  skill_id: 3
+  level: 1
+
+faram_disguises:
+  character_id: 2
+  skill_id: 4
+  level: 1
+
+faram_stealing:
+  character_id: 2
+  skill_id: 5
+  level: 1
+
+faram_handling_traps:
+  character_id: 2
+  skill_id: 6
+  level: 1
+
+faram_acrobatics:
+  character_id: 2
+  skill_id: 7
+  level: 1
+
+faram_climbing:
+  character_id: 2
+  skill_id: 8
+  level: 1
+
+faram_dodge:
+  character_id: 2
+  skill_id: 9
+  level: 1
+
+faram_persuasion:
+  character_id: 2
+  skill_id: 17
+  level: 1
+
+faram_perception:
+  character_id: 2
+  skill_id: 25
+  level: 1

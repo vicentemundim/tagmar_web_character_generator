@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090214163400) do
+ActiveRecord::Schema.define(:version => 20090215164103) do
+
+  create_table "acquired_skills", :force => true do |t|
+    t.integer  "character_id"
+    t.integer  "skill_id"
+    t.integer  "level"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "acquired_weapon_groups", :force => true do |t|
     t.integer  "character_id"
@@ -76,6 +84,11 @@ ActiveRecord::Schema.define(:version => 20090214163400) do
     t.integer  "height"
     t.integer  "weight"
     t.integer  "current_heroic_energy"
+  end
+
+  create_table "characters_skills", :id => false, :force => true do |t|
+    t.integer "character_id"
+    t.integer "skill_id"
   end
 
   create_table "professions", :force => true do |t|

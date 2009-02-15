@@ -35,6 +35,10 @@ module CharactersHelper
     character.god.blank? ? "Ateu" : "Devoto de #{character.god.titleize}"
   end
 
+  def displayable_attribute_name_for(attribute)
+    Rules::Attributes::NAMES[attribute]
+  end
+
   def signed(value)
     (value > 0) ? "+#{value}" : value
   end

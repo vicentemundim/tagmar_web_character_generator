@@ -110,3 +110,9 @@
 #character-sheet #weapons .damageColumn {
   width: 20px;
 }
+
+#character-sheet #skills {
+  width: 400px;
+  padding: 0px;
+  font-size: 0.7em;
+}
