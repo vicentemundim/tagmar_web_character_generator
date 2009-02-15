@@ -38,4 +38,8 @@ module CharactersHelper
   def signed(value)
     (value > 0) ? "+#{value}" : value
   end
+
+  def border_class_for_value_column(column)
+    [8, 15, 21].include?(column) ? 'borderRight' : ''
+  end
 end

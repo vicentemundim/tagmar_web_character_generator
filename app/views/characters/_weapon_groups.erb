@@ -6,11 +6,13 @@
         <% Rules::WeaponGroups::WEAPON_GROUPS.each_with_index do |weapon_group, index| -%>
           <%= content_tag :th, weapon_group, { :title => Rules::WeaponGroups::DESCRIPTIONS[weapon_group], :class => ((index == 0) ? 'noBorderLeft' : '') } -%>
         <% end -%>
+        <th width="100">Acumulados</th>
       </tr>
       <tr>
         <% Rules::WeaponGroups::WEAPON_GROUPS.each_with_index do |weapon_group, index| -%>
           <%= content_tag :td, @character.acquired_weapon_group_level_for(weapon_group), :class => ((index == 0) ? 'noBorderLeft' : '') -%>
         <% end -%>
+        <td width="100"><%= @character.combat_accumulated_points -%></td>
       </tr>
     </table>
   </div>

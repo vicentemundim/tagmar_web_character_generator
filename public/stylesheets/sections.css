@@ -59,6 +59,8 @@
 
 #character-sheet #basic-data {
   width: 200px;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 #character-sheet #basic-data span {
@@ -78,7 +80,33 @@
 }
 
 #character-sheet #weapon-groups {
-  width: 450px;
+  width: 500px;
+  padding: 0px;
+  font-size: 0.7em;
+}
+
+#character-sheet #weapons {
+  table-layout: auto;
   font-size: 0.7em;
   padding: 0px;
+}
+
+#character-sheet #weapons .nameColumn {
+  width: 140px;
+}
+
+#character-sheet #weapons .rangeColumn {
+  width: 80px;
+}
+
+#character-sheet #weapons .adjustmentColumn {
+  width: 50px;
+}
+
+#character-sheet #weapons .valueColumn {
+  width: 20px;
+}
+
+#character-sheet #weapons .damageColumn {
+  width: 20px;
 }

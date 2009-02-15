@@ -25,4 +25,13 @@
 #
 
 class Weapon < Belonging
+  def value_for(column)
+    if column < 9
+      self.first_column - (column - 1)
+    elsif column < 16
+      self.nineth_column - (column - 9)
+    else
+      self.sixteenth_column - (column - 16)
+    end
+  end
 end

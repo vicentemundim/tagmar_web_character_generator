@@ -1,0 +1,33 @@
+<div class="section sectionInNewLine">
+  <h3>Armas <%= toggler_for 'weapons', 'weapons-toggler' -%></h3>
+  <div id="weapons" class="box">
+    <table>
+      <tr class="topRow">
+        <th class="nameColumn noBorderLeft borderRight">Arma</th>
+        <th class="rangeColumn borderRight">Alcance</th>
+        <th class="adjustmentColumn borderRight">Total</th>
+        <%- (1..21).each do |column| -%>
+          <th class="valueColumn <%= border_class_for_value_column(column) -%>"><%= column -%></th>
+        <%- end -%>
+        <th class="damangeColumn">100%</th>
+        <th class="damangeColumn">75%</th>
+        <th class="damangeColumn">50%</th>
+        <th class="damangeColumn">25%</th>
+      </tr>
+      <%- @character.weapons.each do |weapon| -%>
+        <tr class="<%= cycle('oddRow', 'evenRow') -%>">
+          <td class="nameColumn noBorderLeft borderRight" title="<%= weapon.description -%>"><%= weapon.name -%></td>
+          <td class="rangeColumn borderRight"><%= "#{weapon.range}m" -%></td>
+          <td class="adjustmentColumn borderRight"><%= @character.total_adjusment_for(weapon) -%></td>
+          <%- (1..21).each do |column| -%>
+            <td class="valueColumn <%= border_class_for_value_column(column) -%>"><%=signed weapon.value_for(column) -%></td>
+          <%- end -%>
+          <td class="damangeColumn"><%= @character.damage_for(weapon, 100) -%></td>
+          <td class="damangeColumn"><%= @character.damage_for(weapon, 75) -%></td>
+          <td class="damangeColumn"><%= @character.damage_for(weapon, 50) -%></td>
+          <td class="damangeColumn"><%= @character.damage_for(weapon, 25) -%></td>
+        </tr>
+      <%- end -%>
+    </table>
+  </div>
+</div>

@@ -53,6 +53,14 @@
   border-left: 0px;
 }
 
+.box table tr th.borderRight {
+  border-right: 1px solid black;
+}
+
+.box table tr td.borderRight {
+  border-right: 1px solid black;
+}
+
 .field {
   border-bottom: 1px dotted black;
   margin: 4px 0px;
